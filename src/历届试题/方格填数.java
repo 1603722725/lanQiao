@@ -1,8 +1,8 @@
 package 历届试题;
 public class 方格填数 {
-	static int a[]={0,1,2,3,4,5,6,7,8,9};
+	static int a[] = {0,1,2,3,4,5,6,7,8,9};
 	static int ans =0;
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		f(0);
 		System.out.println(ans);
 	}
@@ -12,7 +12,7 @@ public class 方格填数 {
 			if(check())
 				ans++;
 		return;}
-		for(int i = k; i < 10; i++) { //全排列
+		for(int i = k; i < 10; i++) {    //全排列
 			{int t =a[i];a[i]=a[k];a[k]=t;}
 			f(k+1);
 			{int t =a[i];a[i]=a[k];a[k]=t;}

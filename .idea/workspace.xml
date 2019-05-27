@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ab592c8-734c-4b2f-915b-9eaed3c30538" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Test01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Test02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Test03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Test04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Test05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Test06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/Test07.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/com/zzti/lanQiao/保留小数点数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/project/MN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/project/project01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/project/project02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/project/project03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/project/project04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/zifuchuan/Main001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/zifuchuan/zfc01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/zifuchuan/zfc02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/Ademo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/BFS走迷宫$point.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/BFS走迷宫.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/BiTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/MyTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/S.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/三角形面积.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/五星填数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/全排列.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/六角幻方dfs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/分机号.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/区间移位.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/反幻方.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/反幻方1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/国王的遗产.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/填字母游戏.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/学霸的迷宫$point.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/学霸的迷宫.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/小计算器.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/平方十位数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/愤怒的小鸟.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/打靶.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/排列序数dfs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/整理玩具.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/显示二叉树.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/最大乘积.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/最大乘积1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/树型显示.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/版本分支.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/生命游戏.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/碱基dfs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/穿越雷区dfs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/表格计算.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/路径之谜DFS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/决赛/防御力.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/刘汝佳紫书题单/UVA272.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/刘汝佳紫书题单/UVA304.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/dynamic01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/dynamic02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/区间调度问题$Job.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/区间调度问题.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/区间选点问题$Interval.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/区间选点问题.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/快速过河.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/数塔.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/动态规划/数独.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/分考场.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/四平方和.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/垒骰子.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/方格填数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/牌型总数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/移动距离.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/历届试题/饮料换购.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/DP.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/Main001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/Main01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/zz的难题.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/倒数第N个字符串.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/出生年.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/天梯赛座位分配.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/座位分配.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/打折数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/天梯赛/点赞.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/练习系统/带分数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/练习系统/错误票据.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/练习系统/错误票据01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/Demo01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/K倍区间.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/Main02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/map遍历.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/全球变暖.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/凑算式￥全排列.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/分小组.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/分巧克力.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/包子凑数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/打印十字形.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/抽签.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/方格填数.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/日志统计.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/日期问题.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/最大公共子序列.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/最大回文子串.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/阿里巴巴与四十大盗$Obj.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/阿里巴巴与四十大盗.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯/魔方状态.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/BFAndKMP.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/二分查找递归实现.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/二叉树.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/有空字符串的字符串数组二分查找.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/汉诺塔.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/环形矩阵打印.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/矩阵旋转.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/蓝桥杯辅导视频/高效求a的n次幂.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/project/MN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/Ademo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/BFS走迷宫.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/三角形面积.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/全排列.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/六角幻方dfs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/分机号.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/区间移位.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/反幻方.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/反幻方1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/国王的遗产.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/填字母游戏.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/学霸的迷宫.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/小计算器.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/愤怒的小鸟.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/打靶.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/排列序数dfs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/整理玩具.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/最大乘积.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/最大乘积1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/树型显示.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/版本分支.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/碱基dfs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/穿越雷区dfs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/表格计算.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/路径之谜DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/决赛/防御力.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/蓝桥杯辅导视频/矩阵旋转.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/左程云/栈和队列/problem_07生成窗口最大值数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/左程云/栈和队列/problem_07生成窗口最大值数组.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/决赛/五星填数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/决赛/五星填数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/决赛/平方十位数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/决赛/平方十位数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/决赛/显示二叉数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/决赛/显示二叉数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/决赛/生命游戏.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/决赛/生命游戏.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/历届试题/方格填数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/历届试题/方格填数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/蓝桥杯/凑算式.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/蓝桥杯/凑算式￥全排列.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/蓝桥杯辅导视频/环形矩阵打印.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/蓝桥杯辅导视频/环形矩阵打印.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/决赛/碱基dfs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/决赛/穿越雷区dfs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/决赛/表格计算.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/决赛/路径之谜DFS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1272">
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/决赛/防御力.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#151#152#0" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/历届试题/牌型总数.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/历届试题/移动距离.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/历届试题/饮料换购.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/决赛/BFS走迷宫.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/决赛/生命游戏.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>BF</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\myeclipse2014\lanQiao\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/汉诺塔.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/二分查找递归实现.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/BF.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/BFAndKMP.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/有空字符串的字符串数组二分查找.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/高效求a的n次幂.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/Main.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/二叉树.java" />
+        <option value="$PROJECT_DIR$/src/决赛/生命游戏.java" />
+        <option value="$PROJECT_DIR$/src/project/MN.java" />
+        <option value="$PROJECT_DIR$/src/project/project04.java" />
+        <option value="$PROJECT_DIR$/src/决赛/愤怒的小鸟.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯/凑算式￥全排列.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯/包子凑数.java" />
+        <option value="$PROJECT_DIR$/file/a" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/环形矩阵打印.java" />
+        <option value="$PROJECT_DIR$/src/蓝桥杯辅导视频/矩阵旋转.java" />
+        <option value="$PROJECT_DIR$/src/决赛/学霸的迷宫.java" />
+        <option value="$PROJECT_DIR$/src/决赛/qqq.java" />
+        <option value="$PROJECT_DIR$/src/决赛/三角形面积.java" />
+        <option value="$PROJECT_DIR$/src/决赛/最大乘积11.java" />
+        <option value="$PROJECT_DIR$/src/决赛/全排列.java" />
+        <option value="$PROJECT_DIR$/src/决赛/整理玩具.java" />
+        <option value="$PROJECT_DIR$/src/决赛/最大乘积1.java" />
+        <option value="$PROJECT_DIR$/src/决赛/防御力.java" />
+        <option value="$PROJECT_DIR$/src/历届试题/方格填数.java" />
+        <option value="$PROJECT_DIR$/src/决赛/平方十位数.java" />
+        <option value="$PROJECT_DIR$/src/决赛/最大乘积.java" />
+        <option value="$PROJECT_DIR$/src/决赛/树型显示.java" />
+        <option value="$PROJECT_DIR$/src/决赛/小计算器.java" />
+        <option value="$PROJECT_DIR$/src/决赛/填字母游戏.java" />
+        <option value="$PROJECT_DIR$/src/决赛/反幻方.java" />
+        <option value="$PROJECT_DIR$/src/决赛/打靶.java" />
+        <option value="$PROJECT_DIR$/src/决赛/反幻方1.java" />
+        <option value="$PROJECT_DIR$/src/决赛/dfs最短路.java" />
+        <option value="$PROJECT_DIR$/src/决赛/路径之谜.java" />
+        <option value="$PROJECT_DIR$/src/决赛/路径之谜DFS.java" />
+        <option value="$PROJECT_DIR$/src/决赛/碱基.java" />
+        <option value="$PROJECT_DIR$/src/决赛/碱基dfs.java" />
+        <option value="$PROJECT_DIR$/src/决赛/分机号.java" />
+        <option value="$PROJECT_DIR$/src/决赛/五星填数.java" />
+        <option value="$PROJECT_DIR$/src/决赛/显示二叉数.java" />
+        <option value="$PROJECT_DIR$/src/决赛/穿越雷区.java" />
+        <option value="$PROJECT_DIR$/src/决赛/穿越雷区dfs.java" />
+        <option value="$PROJECT_DIR$/src/决赛/表格计算.java" />
+        <option value="$PROJECT_DIR$/src/决赛/国王的遗产.java" />
+        <option value="$PROJECT_DIR$/src/决赛/排列序数dfs.java" />
+        <option value="$PROJECT_DIR$/src/决赛/Ademo.java" />
+        <option value="$PROJECT_DIR$/src/决赛/BFS走迷宫.java" />
+        <option value="$PROJECT_DIR$/src/决赛/六角幻方dfs.java" />
+        <option value="$PROJECT_DIR$/src/决赛/版本分支.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-380" />
+    <option name="width" value="1415" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lanQiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lanQiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557629713946" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.排列序数dfs">
+    <configuration name="表格计算" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.表格计算" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ademo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.Ademo" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="生命游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.生命游戏" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="填字母游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.填字母游戏" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="树型显示" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.树型显示" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="生命游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.生命游戏" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="矩阵旋转" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="蓝桥杯辅导视频.矩阵旋转" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="蓝桥杯辅导视频.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="生命游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.生命游戏" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="二分查找递归实现" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="蓝桥杯辅导视频.二分查找递归实现" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="蓝桥杯辅导视频.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="最大乘积" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.最大乘积" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="方格填数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="历届试题.方格填数" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="历届试题.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="打靶" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.打靶" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="显示二叉树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.显示二叉树" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="最大乘积" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.最大乘积" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="反幻方" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.反幻方" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="平方十位数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.平方十位数" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="打靶" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.打靶" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="最大乘积" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.最大乘积" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="有空字符串的字符串数组二分查找" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="蓝桥杯辅导视频.有空字符串的字符串数组二分查找" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="蓝桥杯辅导视频.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="学霸的迷宫" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.学霸的迷宫" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="显示二叉树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.显示二叉树" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="区间移位" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.区间移位" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="填字母游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.填字母游戏" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="打靶" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.打靶" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="错误票据" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="练习系统.错误票据" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="练习系统.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="显示二叉数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.显示二叉数" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="全排列" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.全排列" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="愤怒的小鸟" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.愤怒的小鸟" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="整理玩具" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.整理玩具" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="最大乘积" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.最大乘积" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="树型显示" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.树型显示" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="五星填数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.五星填数" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="国王的遗产" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.国王的遗产" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="三角形面积" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.三角形面积" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="路径之谜" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.路径之谜" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="版本分支" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.版本分支" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="小计算器" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.小计算器" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="最大乘积" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.最大乘积" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="排列序数dfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.排列序数dfs" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="六角幻方dfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.六角幻方dfs" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="穿越雷区dfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="决赛.穿越雷区dfs" />
+      <module name="lanQiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="决赛.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.表格计算" />
+      <item itemvalue="Application.Ademo" />
+      <item itemvalue="Application.排列序数dfs" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.排列序数dfs" />
+        <item itemvalue="Application.Ademo" />
+        <item itemvalue="Application.表格计算" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ab592c8-734c-4b2f-915b-9eaed3c30538" name="Default Changelist" comment="" />
+      <created>1554293996426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554293996426</updated>
+      <workItem from="1554294008131" duration="5569000" />
+      <workItem from="1554597291255" duration="8985000" />
+      <workItem from="1554680510645" duration="5835000" />
+      <workItem from="1554768383314" duration="7566000" />
+      <workItem from="1554884719559" duration="1628000" />
+      <workItem from="1554980715771" duration="2514000" />
+      <workItem from="1555034450779" duration="4474000" />
+      <workItem from="1555117707025" duration="744000" />
+      <workItem from="1555417023057" duration="4868000" />
+      <workItem from="1555466139976" duration="19141000" />
+      <workItem from="1555539896218" duration="1241000" />
+      <workItem from="1555661893863" duration="7889000" />
+      <workItem from="1555718935914" duration="10228000" />
+      <workItem from="1555810927779" duration="13912000" />
+      <workItem from="1555888836466" duration="5115000" />
+      <workItem from="1555991628304" duration="10077000" />
+      <workItem from="1556070626641" duration="8831000" />
+      <workItem from="1556180711644" duration="6214000" />
+      <workItem from="1556262244484" duration="13124000" />
+      <workItem from="1556323610521" duration="596000" />
+      <workItem from="1556423360487" duration="1422000" />
+      <workItem from="1556504748552" duration="599000" />
+      <workItem from="1556584873877" duration="3064000" />
+      <workItem from="1556672977882" duration="1945000" />
+      <workItem from="1556800336034" duration="4920000" />
+      <workItem from="1556844240006" duration="211000" />
+      <workItem from="1556844485037" duration="18068000" />
+      <workItem from="1556932232300" duration="12012000" />
+      <workItem from="1556965232246" duration="1260000" />
+      <workItem from="1557032762254" duration="8852000" />
+      <workItem from="1557107276864" duration="12710000" />
+      <workItem from="1557222884064" duration="595000" />
+      <workItem from="1557230945756" duration="608000" />
+      <workItem from="1557235554234" duration="32425000" />
+      <workItem from="1557360326834" duration="2962000" />
+      <workItem from="1557405256593" duration="579000" />
+      <workItem from="1557585301165" duration="10190000" />
+      <workItem from="1557837485626" duration="1127000" />
+      <workItem from="1557839987048" duration="406000" />
+      <workItem from="1557840422543" duration="804000" />
+      <workItem from="1557841253724" duration="2216000" />
+      <workItem from="1557885264408" duration="3736000" />
+      <workItem from="1557926021827" duration="27152000" />
+      <workItem from="1558057352991" duration="406000" />
+      <workItem from="1558089979937" duration="4682000" />
+      <workItem from="1558140830054" duration="10973000" />
+      <workItem from="1558178749944" duration="1851000" />
+      <workItem from="1558184753407" duration="18265000" />
+      <workItem from="1558308355283" duration="2151000" />
+      <workItem from="1558318431371" duration="22251000" />
+      <workItem from="1558398589576" duration="2843000" />
+      <workItem from="1558410364891" duration="19986000" />
+      <workItem from="1558483257848" duration="917000" />
+      <workItem from="1558567813602" duration="11425000" />
+      <workItem from="1558704643982" duration="4084000" />
+      <workItem from="1558922284623" duration="825000" />
+      <workItem from="1558962854315" duration="360000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="387433000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49610895" visible="true" weight="0.13404825" />
+      <window_info id="Structure" order="1" sideWeight="0.50389105" side_tool="true" weight="0.15683647" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.883378" weight="0.33286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4490085" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.10764872" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.116621986" side_tool="true" weight="0.92070484" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.16997167" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.24966533" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32964224" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4981203" visible="true" weight="0.14678285" />
+      <window_info id="Structure" order="1" sideWeight="0.50281423" side_tool="true" weight="0.1427614" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.883378" visible="true" weight="0.18271954" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4490085" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.10866373" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32892805" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.116621986" side_tool="true" weight="0.92070484" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.34844193" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.24966533" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯/分巧克力.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯/打印十字形.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯/方格填数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯/凑算式￥全排列.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯/包子凑数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/a">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯辅导视频/环形矩阵打印.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯辅导视频/矩阵旋转.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/qq.java" />
+    <entry file="file://$PROJECT_DIR$/src/决赛/ss.java" />
+    <entry file="file://$PROJECT_DIR$/src/决赛/q.java" />
+    <entry file="file://$PROJECT_DIR$/src/决赛/qqq.java" />
+    <entry file="file://$PROJECT_DIR$/src/蓝桥杯/抽签.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/最大乘积11.java" />
+    <entry file="file://$PROJECT_DIR$/src/历届试题/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/历届试题/方格填数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Software Installation Directory/JDK1.8/jdk/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/dfs最短路.java" />
+    <entry file="file://$PROJECT_DIR$/src/决赛/Ademo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/三角形面积.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/五星填数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/全排列.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/六角幻方dfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/分机号.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/区间移位.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/反幻方.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/反幻方1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/国王的遗产.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/填字母游戏.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/学霸的迷宫.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="100" column="15" lean-forward="true" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/小计算器.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="95" column="20" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/平方十位数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/愤怒的小鸟.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/打靶.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/排列序数dfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/整理玩具.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/显示二叉数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="77" column="11" lean-forward="true" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/最大乘积.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/最大乘积1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/树型显示.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/版本分支.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/碱基dfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/穿越雷区dfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/表格计算.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/路径之谜DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1272">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/防御力.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/历届试题/牌型总数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/历届试题/移动距离.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/历届试题/饮料换购.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/生命游戏.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/决赛/BFS走迷宫.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>左程云</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

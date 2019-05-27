@@ -3,7 +3,6 @@ package 决赛;
  * @author 汪磊
  * @date 2019/4/3 - 20:53
  */
-
 class BiTree
 {
     private int v;
@@ -63,7 +62,7 @@ class BiTree
         buf[y][p2] = '|';
         for(int i=p1; i<=p3; i++) buf[y+1][i]='-';
         for(int i=0; i<sv.length(); i++)
-            buf[y+1][i+p2] = sv.charAt(i);//填空位置
+            buf[y+1][i+p2] = sv.charAt(i);    //填空位置
         if(p1<p2) buf[y+1][p1] = '/';
         if(p3>p2) buf[y+1][p3] = '\\';
 

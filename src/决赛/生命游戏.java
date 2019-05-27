@@ -5,7 +5,7 @@ import java.util.*;
  * @date 2019/4/30 - 21:52
  */
 public class 生命游戏 {
-    static int n=30,m=200;//数组范围
+    static int n=30,m=200;      //数组范围
     static int map[][]=new int[n][m];
     static int temp[][]=new int[n][m];
     static int l;

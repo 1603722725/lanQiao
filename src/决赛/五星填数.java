@@ -26,10 +26,9 @@ public class ÎåĞÇÌîÊı {
             array[i] = array[n];
             array[n] = tmep;
         }
-
     }
-    private static boolean jud() {
-        // TODO Auto-generated method stub
+
+    private static boolean jud(){
         int temp = array[0]+array[5]+array[6]+array[2];
         if(temp != array[2]+array[8]+array[7]+array[4])
             return false;
