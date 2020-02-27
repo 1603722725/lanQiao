@@ -15,7 +15,6 @@ public class 环形矩阵打印 {
     public static void main(String[] args) {
         spiralOrderPrint(m);
     }
-
     public static void spiralOrderPrint(int [][] matrix){
         int tR = 0;
         int tC = 0;
@@ -27,11 +26,11 @@ public class 环形矩阵打印 {
     }
     public static void printEdge(int [][]m,int tR,int tC,int dR,int dC){
         if (tR == dR){
-            for (int i = tC; i <=dC ; i++) {
+            for (int i = tC; i<=dC; i++) {
                 System.out.print(m[tR][i]+" ");
             }
         }else if(tC == dC){
-            for (int i = tR; i <=dR ; i++) {
+            for (int i = tR; i <=dR;i++) {
                 System.out.print(m[i][tC]+" ");
             }
         }else {

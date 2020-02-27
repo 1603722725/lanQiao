@@ -6,8 +6,8 @@ package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
  */
 public class A {
     public static void main(String[] args) {
-        int a=1,b=5;
-        System.out.println((b+a)/2);
-        System.out.println((b-a)>>1+a);
+        double a=1;
+        double b=0.9;
+        System.out.println(a-b);
     }
 }

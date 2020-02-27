@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  * @author wl
  * @Data 2020-01-20 11:12
+ * 计算数组  排序子序列个数
  */
 public class 排序子序列个数 {
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class 排序子序列个数 {
         int flag = 0;
         int result = 1;
         for(int i = 1; i < n; i++) {
-            if(data[i]>data[i-1]) {
+            if(data[i]>data[i-1]){
                 if(flag==0) {
                     flag = 1;
                 }
