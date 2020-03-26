@@ -9,10 +9,7 @@ import javax.swing.*;
 import javax.swing.event.ListDataEvent;
 import javax.xml.transform.sax.SAXTransformerFactory;
 import java.lang.annotation.ElementType;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.concurrent.ForkJoinPool;
 
 /**
@@ -42,6 +39,7 @@ public class Demo {
 //        rotate(arr,2);
 //        String str = "wang lei hello";
 //        String s = reverseWords1(str);
+        HashMap hashMap = new HashMap();
         int[] arr = {0,1,0,3,12};
         moveZeroes(arr);
         System.out.println(Arrays.toString(arr));

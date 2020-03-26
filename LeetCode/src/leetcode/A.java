@@ -6,13 +6,15 @@ package leetcode;
  */
 public class A {
     public static void main(String[] args) {
-        String string = "aa    bb   cc";
+     /*   String string = "aa    bb   cc";
         String test = string.replaceAll("\\s{1,}", " ");
         System.out.println(test);
         string = test;
         String[] str = string.split(" ");
         for (String string2 : str) {
             System.out.println(string2);
-        }
+        }*/
+//        System.out.println(10%8);
+        System.out.println(-21 >>> 1);
     }
 }

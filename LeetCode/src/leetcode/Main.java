@@ -1,41 +1,42 @@
 package leetcode;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 /**
  * @author wl
  * @Data 2020-02-22 21:50
  */
 // "static void main" must be defined in a public class.
 // "static void main" must be defined in a public class.
+// "static void main" must be defined in a public class.
 public class Main {
     public static void main(String[] args) {
-        // initialize
-        String s1 = "Hello World";
-        System.out.println("s1 is \"" + s1 + "\"");
-        String s2 = s1;
-        System.out.println("s2 is another reference to s1.");
-        String s3 = new String(s1);
-        System.out.println("s3 is a copy of s1.");
-        // compare using '=='
-        System.out.println("Compared by '==':");
-        // true since string is immutable and s1 is binded to "Hello World"
-        System.out.println("s1 and \"Hello World\": " + (s1 == "Hello World"));
-        // true since s1 and s2 is the reference of the same object
-        System.out.println("s1 and s2: " + (s1 == s2));
-        // false since s3 is refered to another new object
-        System.out.println("s1 and s3: " + (s1 == s3));
-        // compare using 'equals'
-        System.out.println("Compared by 'equals':");
-        System.out.println("s1 and \"Hello World\": " + s1.equals("Hello World"));
-        System.out.println("s1 and s2: " + s1.equals(s2));
-        System.out.println("s1 and s3: " + s1.equals(s3));
-        // compare using 'compareTo'
-        System.out.println("Compared by 'compareTo':");
-        System.out.println("s1 and \"Hello World\": " + (s1.compareTo("Hello World") == 0));
-        System.out.println("s1 and s2: " + (s1.compareTo(s2) == 0));
-        System.out.println("s1 and s3: " + (s1.compareTo(s3) == 0));
+        // 1. initialize a hash map
+        Map<Integer, Integer> hashmap = new HashMap<>();
+        // 2. insert a new (key, value) pair
+        hashmap.putIfAbsent(2, 0);
+        hashmap.putIfAbsent(2, 3);
+        // 3. insert a new (key, value) pair or update the value of existed key
+        hashmap.put(1, 1);
+        hashmap.put(1, 2);
+        // 4. get the value of specific key
+        System.out.println("The value of key 1 is: " + hashmap.get(1));
+        // 5. delete a key
+        hashmap.remove(2);
+        // 6. check if a key is in the hash map
+        if (!hashmap.containsKey(2)) {
+            System.out.println("Key 2 is not in the hash map.");
+        }
+        // 7. get the size of the hash map
+        System.out.println("The size of hash map is: " + hashmap.size());
+        // 8. iterate the hash map
+        for (Map.Entry<Integer, Integer> entry : hashmap.entrySet()) {
+            System.out.print("(" + entry.getKey() + "," + entry.getValue() + ") ");
+        }
+        System.out.println("are in the hash map.");
+        // 9. clear the hash map
+        hashmap.clear();
+        // 10. check if the hash map is empty
+        if (hashmap.isEmpty()) {
+            System.out.println("hash map is empty now!");
+        }
     }
 }
