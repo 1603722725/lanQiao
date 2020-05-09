@@ -1,6 +1,6 @@
 package 栈和队列;
 import java.util.LinkedList;
-public class problem_07生成窗口最大值数组 {
+public class problem_07生成窗口最大值数组{
    public static int [] getMaxWindow(int []arr,int w){
        if (arr==null || w<1 || arr.length<w)
            return null;
@@ -16,7 +16,7 @@ public class problem_07生成窗口最大值数组 {
            if(qmax.peekFirst() == i-w){
                qmax.pollFirst();
            }
-           if (i>=w-1)
+           if(i>=w-1)
                res[index++] = arr[qmax.peekFirst()];
        }
        return res;

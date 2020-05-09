@@ -6,8 +6,10 @@ package ¿∂«≈±≠∏®µº ”∆µ;
  */
 public class A {
     public static void main(String[] args) {
-        double a=1;
-        double b=0.9;
+        double a = 0.5;
+        double b = 0.1;
+        int c= (int)(a-b);
         System.out.println(a-b);
+        System.out.println(c);
     }
 }
