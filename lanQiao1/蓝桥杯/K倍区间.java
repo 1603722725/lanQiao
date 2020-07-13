@@ -1,25 +1,28 @@
-package À¶ÇÅ±­;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½;
 import java.util.Scanner;
-public class K±¶Çø¼ä {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int k = sc.nextInt();
-		int a[] = new int[n + 1];
-		for (int i = 0; i < n; i++)
-			a[i] = sc.nextInt();
-		a[0] = a[0] % k;
-		for (int i = 1; i < n; i++)
-			a[i] = ((a[i] % k) + a[i - 1]) % k;
-		long sum = 0;
-		int b[] = new int[n + 1];
-		for (int i = 0; i < n; i++){
-			sum += b[a[i]];
-			b[a[i]]++;
-			}
-		System.out.println(sum + b[0]);
-	}
-}
+
+public class Kï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+        int a[]=new int[n+1];
+        for(int i=0;i<n; i++)
+        a[i]=sc.nextInt();
+        a[0]=a[0]%k;
+        for(int i=1;i<n; i++)
+        a[i]=((a[i]%k)+a[i-1])%k;
+        long sum=0;
+        int b[]=new int[n+1];
+        for(int i=0;i<n; i++){
+        sum+=b[a[i]];
+        b[a[i]]++;
+        }
+        System.out.println(sum+b[0]);
+        }
+        }
 
 	
 	/*public static void main(String[] args) {

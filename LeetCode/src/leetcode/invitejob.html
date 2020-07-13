@@ -1,723 +1,766 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<!-- 页面meta -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>客户列表</title>
-		<meta name="description" content="AdminLTE2定制版">
-		<meta name="keywords" content="AdminLTE2定制版">
+    <title>客户列表</title>
+    <meta name="description" content="AdminLTE2定制版">
+    <meta name="keywords" content="AdminLTE2定制版">
 
-		<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
 
-		<link rel="stylesheet" href="../../../../../personmanager/src/main/webapp/aaa/plugins/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../../../../../personmanager/src/main/webapp/aaa/plugins/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="../../../../../personmanager/src/main/webapp/aaa/plugins/iCheck/square/blue.css">
-		<link rel="stylesheet" href="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/css/AdminLTE.css">
-		<link rel="stylesheet" href="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet"
+          href="../../../../../personmanager/src/main/webapp/aaa/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="../../../../../personmanager/src/main/webapp/aaa/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../../personmanager/src/main/webapp/aaa/plugins/iCheck/square/blue.css">
+    <link rel="stylesheet" href="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet"
+          href="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/css/skins/_all-skins.min.css">
 
-		<link href="../../../../../personmanager/src/main/webapp/aaa/css/zpageNav.css" rel="stylesheet" />
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/vue/vue.js"></script>
-		<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/vue/zpageNav.js"></script>
-		<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/vue/axios-0.18.0.js"></script>
+    <link href="../../../../../personmanager/src/main/webapp/aaa/css/zpageNav.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../../../../../personmanager/src/main/webapp/aaa/plugins/vue/vue.js"></script>
+    <script src="../../../../../personmanager/src/main/webapp/aaa/plugins/vue/zpageNav.js"></script>
+    <script src="../../../../../personmanager/src/main/webapp/aaa/plugins/vue/axios-0.18.0.js"></script>
 
-	</head>
+</head>
 
-	<body class="hold-transition skin-purple sidebar-mini">
+<body class="hold-transition skin-purple sidebar-mini">
 
-		<div class="wrapper">
+<div class="wrapper">
 
-			<div id="app">
-				<!-- 页面头部 -->
-				<header class="main-header">
+    <div id="app">
+        <!-- 页面头部 -->
+        <header class="main-header">
 
-					<!-- Logo -->
-					<a href="all-admin-index.html" class="logo">
-						<!-- mini logo for sidebar mini 50x50 pixels -->
-						<span class="logo-mini"><b>数据</b></span>
-						<!-- logo for regular state and mobile devices -->
-						<span class="logo-lg"><b>人力资源</b>后台管理</span>
-					</a>
+            <!-- Logo -->
+            <a href="all-admin-index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>数据</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>人力资源</b>后台管理</span>
+            </a>
 
-					<!-- Header Navbar: style can be found in header.less -->
-					<nav class="navbar navbar-static-top">
-						<!-- Sidebar toggle button-->
-						<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-							<span class="sr-only">Toggle navigation</span>
-						</a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
 
-					</nav>
-				</header>
-				<!-- 页面头部 /-->
+            </nav>
+        </header>
+        <!-- 页面头部 /-->
 
-				<!-- 导航侧栏 -->
-			<!-- 导航侧栏 -->
-				<aside class="main-sidebar">
-					<!-- sidebar: style can be found in sidebar.less -->
-					<section class="sidebar">
-						<!-- Sidebar user panel -->
-						<div class="user-panel">
-							<div class="pull-left image">
-								<img src="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-							</div>
-							<div class="pull-left info">
-								<p>金先生</p>
-								<a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
-							</div>
-						</div>
+        <!-- 导航侧栏 -->
+        <!-- 导航侧栏 -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/img/user3-128x128.jpg"
+                             class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>金先生</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+                    </div>
+                </div>
 
-						<!-- sidebar menu: : style can be found in sidebar.less -->
-						<ul class="sidebar-menu">
-							<li class="header">菜单</li>
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="header">菜单</li>
 
-							<li id="admin-index">
-								<a href="../../../../../personmanager/src/main/webapp/aaa/index.html"><i class="fa fa-dashboard"></i> <span>首页</span></a>
-							</li>
+                    <li id="admin-index">
+                        <a href="../../../../../personmanager/src/main/webapp/aaa/index.html"><i
+                                class="fa fa-dashboard"></i> <span>首页</span></a>
+                    </li>
 
-							<!-- 菜单 -->
-							<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>部门管理</span>
-									<span class="pull-right-container">
+                    <!-- 菜单 -->
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>部门管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="../../../../../personmanager/src/main/webapp/aaa/department.html">
-											<i class="fa fa-files-o"></i>部门查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="../../../../../personmanager/src/main/webapp/aaa/department.html">
+                                    <i class="fa fa-files-o"></i>部门查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-							<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>日志管理</span>
-									<span class="pull-right-container">
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>日志管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="../../../../../personmanager/src/main/webapp/aaa/log-datalist.html">
-											<i class="fa fa-files-o"></i>日志查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="../../../../../personmanager/src/main/webapp/aaa/log-datalist.html">
+                                    <i class="fa fa-files-o"></i>日志查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-								<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>员工管理</span>
-									<span class="pull-right-container">
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>员工管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="../../../../../personmanager/src/main/webapp/aaa/employee.html">
-											<i class="fa fa-files-o"></i>员工查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="../../../../../personmanager/src/main/webapp/aaa/employee.html">
+                                    <i class="fa fa-files-o"></i>员工查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-								<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>招聘管理</span>
-									<span class="pull-right-container">
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>招聘管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="invitejob.html">
-											<i class="fa fa-files-o"></i>招聘查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="invitejob.html">
+                                    <i class="fa fa-files-o"></i>招聘查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-								<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>培训管理</span>
-									<span class="pull-right-container">
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>培训管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="../../../../../personmanager/src/main/webapp/aaa/train.html">
-											<i class="fa fa-files-o"></i>培训查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="../../../../../personmanager/src/main/webapp/aaa/train.html">
+                                    <i class="fa fa-files-o"></i>培训查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-								<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>奖惩管理</span>
-									<span class="pull-right-container">
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>奖惩管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="../../../../../personmanager/src/main/webapp/aaa/cj.html">
-											<i class="fa fa-files-o"></i>奖惩查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="../../../../../personmanager/src/main/webapp/aaa/cj.html">
+                                    <i class="fa fa-files-o"></i>奖惩查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-								<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>薪资管理</span>
-									<span class="pull-right-container">
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>薪资管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="../../../../../personmanager/src/main/webapp/aaa/pay.html">
-											<i class="fa fa-files-o"></i>薪资查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="../../../../../personmanager/src/main/webapp/aaa/pay.html">
+                                    <i class="fa fa-files-o"></i>薪资查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-								<li class="treeview">
-								<a href="#">
-									<i class="fa fa-cogs"></i> <span>用户管理</span>
-									<span class="pull-right-container">
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>用户管理</span>
+                            <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
-								</a>
-								<ul class="treeview-menu">
+                        </a>
+                        <ul class="treeview-menu">
 
-									<li id="system-setting">
-										<a href="../../../../../personmanager/src/main/webapp/aaa/manager.html">
-											<i class="fa fa-files-o"></i>用户查询
-										</a>
-									</li>
+                            <li id="system-setting">
+                                <a href="../../../../../personmanager/src/main/webapp/aaa/manager.html">
+                                    <i class="fa fa-files-o"></i>用户查询
+                                </a>
+                            </li>
 
-								</ul>
-							</li>
-						</ul>
-					</section>
-					<!-- /.sidebar -->
-				</aside>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
 
-				<!-- 内容区域 -->
-				<div class="content-wrapper">
+        <!-- 内容区域 -->
+        <div class="content-wrapper">
 
-					<!-- 内容头部 -->
-					<section class="content-header">
-						<h1>
-                        客户查询
-                        <small>数据列表</small>
-                    </h1>
-						<ol class="breadcrumb">
-							<li>
-								<a href="#"><i class="fa fa-dashboard"></i>客户管理</a>
-							</li>
-							<li class="active">客户查询</li>
-						</ol>
-					</section>
+            <!-- 内容头部 -->
+            <section class="content-header">
+                <h1>
+                    客户查询
+                    <small>数据列表</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#"><i class="fa fa-dashboard"></i>客户管理</a>
+                    </li>
+                    <li class="active">客户查询</li>
+                </ol>
+            </section>
 
-					<!-- 正文区域 -->
-					<section class="content">
+            <!-- 正文区域 -->
+            <section class="content">
 
-						<!-- .box-body -->
-						<div class="box box-primary">
-							<div class="box-body">
+                <!-- .box-body -->
+                <div class="box box-primary">
+                    <div class="box-body">
 
-								<!-- 数据表格 -->
-								<div class="table-box">
+                        <!-- 数据表格 -->
+                        <div class="table-box">
 
-									<!--工具栏-->
-									<div class="pull-left">
-										<div class="form-group form-inline">
-											<div class="btn-group">
-												客户名称 : <input type="text" v-model="searchEntity.name" class="form-control input-sm" placeholder="客户名称">&nbsp;&nbsp; 
-												客户来源 : <input type="text" v-model="searchEntity.sex" class="form-control input-sm" placeholder="客户来源">&nbsp;&nbsp; 
-												所属行业 : <input type="text" v-model="searchEntity.age" class="form-control input-sm" placeholder="所属行业">&nbsp;&nbsp;
-												客户级别 :<input type="text" v-model="searchEntity.born" class="form-control input-sm" placeholder="客户级别">&nbsp;&nbsp;
-											</div>
-										</div>
-										<!--<input v-model="newempName" type="text" class="form-control" @click="selEmp" placeholder="请填写搜索内容">-->
-										<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newCustomerDialog" @click="clearCustomer()">新建</a>
-									</div>
-									
-									<div class="box-tools pull-right">
-										<div class="has-feedback">
-											<button type="button" class="btn btn-primary" title="查询" @click="page=1;search()"> 查询 <i class="fa  fa-search"></i></button>
-										</div>
-									</div>
-									<!--工具栏/-->
+                            <!--工具栏-->
+                            <div class="pull-left">
+                                <div class="form-group form-inline">
+                                    <div class="btn-group">
+                                        客户名称 : <input type="text" v-model="searchEntity.name"
+                                                      class="form-control input-sm" placeholder="客户名称">&nbsp;&nbsp;
+                                        客户来源 : <input type="text" v-model="searchEntity.sex"
+                                                      class="form-control input-sm" placeholder="客户来源">&nbsp;&nbsp;
+                                        所属行业 : <input type="text" v-model="searchEntity.age"
+                                                      class="form-control input-sm" placeholder="所属行业">&nbsp;&nbsp;
+                                        客户级别 :<input type="text" v-model="searchEntity.born"
+                                                     class="form-control input-sm" placeholder="客户级别">&nbsp;&nbsp;
+                                    </div>
+                                </div>
+                                <!--<input v-model="newempName" type="text" class="form-control" @click="selEmp" placeholder="请填写搜索内容">-->
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newCustomerDialog"
+                                   @click="clearCustomer()">新建</a>
+                            </div>
 
-									<!--数据列表-->
-									<table id="dataList" class="table table-bordered table-striped table-hover dataTable">
-										<thead>
-											<tr>
-												<th class="" style="padding-right:0px;">
-													<input id="selall" type="checkbox" class="icheckbox_square-blue">
-												</th>
-												<th class="">编号</th>
-												<th class="">客户名称</th>
-												<th class="">客户来源</th>
-												<th class="">所属行业</th>
-												<th class="">客户级别</th>
-												<th class="">联系人</th>
-												<th class="">固定电话</th>
-												<th class="">手机</th>
-												<th class="">联系地址</th>
-												<!-- <th class="">创建时间</th> -->
-												<th class="">操作</th>
-											</tr>
-										</thead>
+                            <div class="box-tools pull-right">
+                                <div class="has-feedback">
+                                    <button type="button" class="btn btn-primary" title="查询" @click="page=1;search()">
+                                        查询 <i class="fa  fa-search"></i></button>
+                                </div>
+                            </div>
+                            <!--工具栏/-->
 
-										<tbody>
-										<!-- //item in dataList(cust,index) of dataList -->
-											<tr v-for="(cust,index) of selCust()">
-												<td><input name="ids" type="checkbox"></td>
-												<td>{{cust.id}}</td>
-												<td>{{cust.name}}</td>
-												<td>{{cust.sex}}</td>
-												<td>{{cust.age}}</td>
-												<td>{{cust.born}}</td>
-												<td>{{cust.job}}</td>
-												<td>{{cust.specialty}}</td>
-												<td>{{cust.experience}}</td>
-												<td>{{cust.teachSchool}}</td>
-												<!-- <td>{{cust.custCreatetime}}</td> -->
-												<td class="text-center">
-													<button type="button" class="btn bg-olive btn-xs"  data-toggle="modal" data-target="#customerEditDialog" @click="showCust(index)">修改</button>
-													<button type="button" class="btn bg-olive btn-xs" @click="delCust(index)">删除</button>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+                            <!--数据列表-->
+                            <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+                                <thead>
+                                <tr>
+                                    <th class="" style="padding-right:0px;">
+                                        <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                                    </th>
+                                    <th class="">编号</th>
+                                    <th class="">客户名称</th>
+                                    <th class="">客户来源</th>
+                                    <th class="">所属行业</th>
+                                    <th class="">客户级别</th>
+                                    <th class="">联系人</th>
+                                    <th class="">固定电话</th>
+                                    <th class="">手机</th>
+                                    <th class="">联系地址</th>
+                                    <!-- <th class="">创建时间</th> -->
+                                    <th class="">操作</th>
+                                </tr>
+                                </thead>
 
-								</div>
-								<!-- /.box-body -->
-								<!-- /.box-footer-->
-							</div>
-							<!-- 创建客户模态框 -->
-							<div class="modal fade" id="newCustomerDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-											<h4 class="modal-title" id="myModalLabel">新建客户信息</h4>
-										</div>
-										<div class="modal-body">
-											<form class="form-horizontal" id="new_customer_form">
-												<div class="form-group">
-													<label for="new_customerName" class="col-sm-2 control-label">客户名称</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="name" placeholder="客户名称" name="cust_name" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="new_customerFrom" style="float:left;padding:7px 15px 0 27px;">客户来源</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="sex" placeholder="客户来源" name="cust_source" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="new_age" style="float:left;padding:7px 15px 0 27px;">所属行业</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="age" placeholder="所属行业" name="cust_source" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="new_born" style="float:left;padding:7px 15px 0 27px;">客户级别</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="born" placeholder="客户级别" name="cust_source" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="new_linkMan" class="col-sm-2 control-label">联系人</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="job" placeholder="联系人" name="cust_linkman" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="new_phone" class="col-sm-2 control-label">固定电话</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="specialty" placeholder="固定电话" name="cust_phone" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="new_mobile" class="col-sm-2 control-label">移动电话</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="experience" placeholder="移动电话" name="cust_mobile" />
-													</div>
-												</div>
+                                <tbody>
+                                <!-- //item in dataList(cust,index) of dataList -->
+                                <tr v-for="(cust,index) of selCust()">
+                                    <td><input name="ids" type="checkbox"></td>
+                                    <td>{{cust.id}}</td>
+                                    <td>{{cust.name}}</td>
+                                    <td>{{cust.sex}}</td>
+                                    <td>{{cust.age}}</td>
+                                    <td>{{cust.born}}</td>
+                                    <td>{{cust.job}}</td>
+                                    <td>{{cust.specialty}}</td>
+                                    <td>{{cust.experience}}</td>
+                                    <td>{{cust.teachSchool}}</td>
+                                    <!-- <td>{{cust.custCreatetime}}</td> -->
+                                    <td class="text-center">
+                                        <button type="button" class="btn bg-olive btn-xs" data-toggle="modal"
+                                                data-target="#customerEditDialog" @click="showCust(index)">修改
+                                        </button>
+                                        <button type="button" class="btn bg-olive btn-xs" @click="delCust(index)">删除
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
 
-												<div class="form-group">
-													<label for="new_address" class="col-sm-2 control-label">联系地址</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="teachSchool" placeholder="联系地址" name="cust_address" />
-													</div>
-												</div>
-											</form>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-											<button type="button" class="btn btn-primary" data-dismiss="modal" @click="addCust">创建客户</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- 修改客户模态框 -->
-							<div class="modal fade" id="customerEditDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-											<h4 class="modal-title" id="myModalLabel">修改客户信息</h4>
-										</div>
-										<div class="modal-body">
-											<form class="form-horizontal" id="edit_cust">
-												<input type="hidden" v-model="edit_cust.id" name="cust_id" />
-												<div class="form-group">
-													<label for="edit_cust.name" class="col-sm-2 control-label">客户名称</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="edit_cust.name" placeholder="客户名称" name="edit_cust.name" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="edit_cust.sex" style="float:left;padding:7px 15px 0 27px;">客户来源</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="edit_cust.sex" placeholder="客户来源" name="edit_cust.sex" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="edit_cust.age" style="float:left;padding:7px 15px 0 27px;">所属行业</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="edit_cust.age" placeholder="所属行业" name="edit_cust.age" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="edit_cust.born" style="float:left;padding:7px 15px 0 27px;">客户级别</label>
-													<div class="col-sm-10">
-															<input type="text" class="form-control" v-model="edit_cust.born" placeholder="客户级别" name="edit_cust.born" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="edit_cust.job" class="col-sm-2 control-label">联系人</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="edit_cust.job" placeholder="联系人" name="edit_cust.job" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="edit_cust.specialty" class="col-sm-2 control-label">固定电话</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="edit_cust.specialty" placeholder="固定电话" name="edit_cust.specialty" />
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="edit_cust.experience" class="col-sm-2 control-label">移动电话</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="edit_cust.experience" placeholder="移动电话" name="edit_cust.experience" />
-													</div>
-												</div>
-												
-												<div class="form-group">
-													<label for="edit_cust.teachSchool" class="col-sm-2 control-label">联系地址</label>
-													<div class="col-sm-10">
-														<input type="text" class="form-control" v-model="edit_cust.teachSchool" placeholder="联系地址" name="edit_cust.teachSchool"/>
-													</div>
-												</div>
-											</form>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-											<button type="button" class="btn btn-primary" data-dismiss="modal" @click="updateCust()">保存修改</button>
-										</div>
-									</div>
-								</div>
-							</div>
+                        </div>
+                        <!-- /.box-body -->
+                        <!-- /.box-footer-->
+                    </div>
+                    <!-- 创建客户模态框 -->
+                    <div class="modal fade" id="newCustomerDialog" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">新建客户信息</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" id="new_customer_form">
+                                        <div class="form-group">
+                                            <label for="new_customerName" class="col-sm-2 control-label">客户名称</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="name"
+                                                       placeholder="客户名称" name="cust_name"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="new_customerFrom" style="float:left;padding:7px 15px 0 27px;">客户来源</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="sex" placeholder="客户来源"
+                                                       name="cust_source"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="new_age"
+                                                   style="float:left;padding:7px 15px 0 27px;">所属行业</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="age" placeholder="所属行业"
+                                                       name="cust_source"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="new_born"
+                                                   style="float:left;padding:7px 15px 0 27px;">客户级别</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="born"
+                                                       placeholder="客户级别" name="cust_source"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="new_linkMan" class="col-sm-2 control-label">联系人</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="job" placeholder="联系人"
+                                                       name="cust_linkman"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="new_phone" class="col-sm-2 control-label">固定电话</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="specialty"
+                                                       placeholder="固定电话" name="cust_phone"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="new_mobile" class="col-sm-2 control-label">移动电话</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="experience"
+                                                       placeholder="移动电话" name="cust_mobile"/>
+                                            </div>
+                                        </div>
 
-							<!-- <div class="wrap" id="wrap">
-								<zpagenav v-bind:page="page" v-bind:page-size="pageSize" v-bind:total="total" v-bind:max-page="maxPage" v-on:pagehandler="pageHandler"></zpagenav>
-							</div> -->
-							 <nav aria-label="">
-                                <ul class="pager">
-                                    <li v-if=" page > 1 "><a href="#" @click="pageHandler(page-1)">上一页</a></li>
-                                    <li><a href="#" @click="pageHandler(page+1)">下一页</a></li>
-                                    <li>当前页码 : {{page}}</li>
-                                </ul>
-                            </nav>
+                                        <div class="form-group">
+                                            <label for="new_address" class="col-sm-2 control-label">联系地址</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="teachSchool"
+                                                       placeholder="联系地址" name="cust_address"/>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" @click="addCust">
+                                        创建客户
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 修改客户模态框 -->
+                    <div class="modal fade" id="customerEditDialog" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">修改客户信息</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" id="edit_cust">
+                                        <input type="hidden" v-model="edit_cust.id" name="cust_id"/>
+                                        <div class="form-group">
+                                            <label for="edit_cust.name" class="col-sm-2 control-label">客户名称</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.name"
+                                                       placeholder="客户名称" name="edit_cust.name"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit_cust.sex"
+                                                   style="float:left;padding:7px 15px 0 27px;">客户来源</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.sex"
+                                                       placeholder="客户来源" name="edit_cust.sex"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit_cust.age"
+                                                   style="float:left;padding:7px 15px 0 27px;">所属行业</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.age"
+                                                       placeholder="所属行业" name="edit_cust.age"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit_cust.born"
+                                                   style="float:left;padding:7px 15px 0 27px;">客户级别</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.born"
+                                                       placeholder="客户级别" name="edit_cust.born"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit_cust.job" class="col-sm-2 control-label">联系人</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.job"
+                                                       placeholder="联系人" name="edit_cust.job"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit_cust.specialty" class="col-sm-2 control-label">固定电话</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.specialty"
+                                                       placeholder="固定电话" name="edit_cust.specialty"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit_cust.experience"
+                                                   class="col-sm-2 control-label">移动电话</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.experience"
+                                                       placeholder="移动电话" name="edit_cust.experience"/>
+                                            </div>
+                                        </div>
 
-						</div>
-					</section>
-					<!-- 正文区域 /-->
+                                        <div class="form-group">
+                                            <label for="edit_cust.teachSchool"
+                                                   class="col-sm-2 control-label">联系地址</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="edit_cust.teachSchool"
+                                                       placeholder="联系地址" name="edit_cust.teachSchool"/>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                            @click="updateCust()">保存修改
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-				</div>
-			</div>
-		</div>
+                    <!-- <div class="wrap" id="wrap">
+                        <zpagenav v-bind:page="page" v-bind:page-size="pageSize" v-bind:total="total" v-bind:max-page="maxPage" v-on:pagehandler="pageHandler"></zpagenav>
+                    </div> -->
+                    <nav aria-label="">
+                        <ul class="pager">
+                            <li v-if=" page > 1 "><a href="#" @click="pageHandler(page-1)">上一页</a></li>
+                            <li><a href="#" @click="pageHandler(page+1)">下一页</a></li>
+                            <li>当前页码 : {{page}}</li>
+                        </ul>
+                    </nav>
 
-		<div class="modal fade" id="loadingModal" backdrop="static" keyboard="false">
+                </div>
+            </section>
+            <!-- 正文区域 /-->
 
-			<div style="width: 200px;height:20px; z-index: 20000; position: absolute; text-align: center; left: 50%; top: 50%;margin-left:-100px;margin-top:-10px">
+        </div>
+    </div>
+</div>
 
-				<h3 id="loadText" style="color: white">loading...</h3>
-			</div>
-		</div>
+<div class="modal fade" id="loadingModal" backdrop="static" keyboard="false">
 
-		<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/jQuery/jquery-2.2.3.min.js"></script>
-		<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/bootstrap/js/bootstrap.min.js"></script>
-		<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/iCheck/icheck.min.js"></script>
-		<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/js/app.min.js"></script>
-		<script type="text/javascript">
-			new Vue({
-				el: '#app',
-				data: {
-					dataList: [],
-					id: "",
-					name: "",
-					sex: "",
-					age: "",
-					born: "",
-					job: "",
-					specialty: "",
-					experience: "",
-					teachSchool: "",
-					//custCreatetime: "",
-					newname:"",
-					edit_cust: {
-						//id:0,
-						id: "",
-						name: "",
-						sex: "",
-						age: "",
-						born: "",
-						job: "",
-						specialty: "",
-						experience: "",
-						teachSchool: "",
-						//custCreatetime: ""
-						afterSchool:"",
-						tel:"",
-						address:"",
-						createtime:"",
-						content:"",
-						isstock:""
-					},
-					searchEntity: {
-						name: '',
-						sex: '',
-						age: '',
-						born: '',
-					},
-					page: 1, //显示的是哪一页
-					pageSize: 10, //每一页显示的数据条数
-					total: 0, //记录总数
-					maxPage: 0 //最大页数
-				},
-				methods: {
-					
-					addCust: function() {
-						var cust = {
-							/*custCreatetime: new Data().toLocaleString()*/
-						};
-						cust.id = this.id;
-						cust.name = this.name;
-						cust.sex = this.sex;
-						cust.age = this.age;
-						cust.born = this.born;
-						cust.job = this.job;
-						cust.specialty = this.specialty;
-						cust.experience = this.experience;
-						cust.teachSchool = this.teachSchool;
-					/* 	console.log(this.name);
-						console.log(this.born); */
-						this.dataList.push(cust);
-						//向后台添加数据
-						let params=new URLSearchParams();
-						params.append("id",this.id);
-		 				params.append("name",this.name);
-		 				params.append("sex",this.sex);
-		 				params.append("age",this.age);
-		 				params.append("born",this.born);
-		 				params.append("job",this.job);
-						params.append("specialty",this.specialty);
-		 				params.append("experience",this.experience);
-		 				params.append("teachSchool",this.teachSchool);
-						axios.post('/custInsert',params).then(function(rs){
-							if(rs.status =="200"){
-					            alert("客户创建成功！");
-					            window.location.reload();
-					        }else{
-					            alert("客户创建失败！");
-					            window.location.reload();
-					        }
-		 					console.log("添加");
-		 				})
-						this.id = Number(this.id)+1;
-					},
-					updateCust: function() {
-						for(var i = 0; i < this.dataList.length; i++) {
-							if(this.dataList[i].id == this.edit_cust.id){
-								this.dataList[i].name = this.edit_cust.name;
-								this.dataList[i].sex = this.edit_cust.sex;
-								this.dataList[i].age = this.edit_cust.age;
-								this.dataList[i].born = this.edit_cust.born;
-								this.dataList[i].job = this.edit_cust.job;
-								this.dataList[i].specialty = this.edit_cust.specialty;
-								this.dataList[i].experience = this.edit_cust.experience;
-								this.dataList[i].teachSchool = this.edit_cust.teachSchool;
-								console.log(this.dataList[i].id);
-								console.log(this.edit_cust.id);
-								console.log(this.dataList[i].name);
-								console.log(this.edit_cust.name);
-								let params=new URLSearchParams();
-								params.append("id",this.edit_cust.id);
-				 				params.append("name",this.edit_cust.name);
-				 				params.append("sex",this.edit_cust.sex);
-				 				params.append("age",this.edit_cust.age);
-				 				params.append("born",this.edit_cust.born);
-				 				params.append("job",this.edit_cust.job);
-								params.append("specialty",this.edit_cust.specialty);
-				 				params.append("experience",this.edit_cust.experience);
-				 				params.append("teachSchool",this.edit_cust.teachSchool);
-				 					axios.post('/custUpdate',params).then(function(rs){
-							if(rs.status =="200"){
-					            alert("客户修改成功！");
-					            window.location.reload();
-					        }else{
-					            alert("客户修改失败！");
-					            window.location.reload();
-					        }
-		 					console.log("添加");
-		 				})
-				 				
-				 				//axios.put('/custUpdate?id='+this.edit_cust.id,{
-                          		/* id:this.edit_cust.id,
-				 				name:this.edit_cust.name,
-								sex:this.edit_cust.sex,
-								age:this.edit_cust.age,
-								born:this.edit_cust.born,
-								job:this.edit_cust.job,
-								specialty:this.edit_cust.specialty,
-								experience:this.edit_cust.experience,
-								teachSchool:this.edit_cust.teachSchool  */ 
-                          /*	}).then(function(rs){
-								if(rs.status =="200"){
-						            alert("客户修改成功！");
-						            window.location.reload();
-						        }else{
-						            alert("客户修改失败！");
-						            window.location.reload();
-						        }
-                          	});*/
-							}
-						}
-					},
-					
-					selCust: function() {
-						var newcustList = [];
-						for(var i = 0; i < this.dataList.length; i++) {
-							if(this.dataList[i].name.indexOf(this.newname) > -1) {
-								/* console.log(this.dataList[i].custCreatetime);
-								console.log(this.dataList[i].name); */
-								console.log(this.dataList[i].id);
-								console.log(this.dataList[i].name);
-								newcustList.push(this.dataList[i]);
-							}
-						}
-						return newcustList;
-					},
-					
-					delCust: function(index) {
-						var id = this.dataList[index].id;
-						if(confirm('确实要删除该客户吗?')){
-						//向后台数据发送删除的 数据   
-						axios.delete('/custDelete?id='+id).then(function(rs){
-							 if(rs.status =="200"){
-					            alert("客户删除成功！");
-					            window.location.reload();
-					        }else{
-					            alert("客户删除失败！");
-					            window.location.reload();
-					        } 
-							console.log(rs);
-		 				})
-						this.dataList.splice(index, 1);
-						}
-					},
+    <div style="width: 200px;height:20px; z-index: 20000; position: absolute; text-align: center; left: 50%; top: 50%;margin-left:-100px;margin-top:-10px">
 
-					showCust: function(index) {
-						this.edit_cust.id = this.dataList[index].id;
-						this.edit_cust.id= this.dataList[index].id;
-						this.edit_cust.name = this.dataList[index].name;
-						//this.edit_cust.custUserId = this.dataList[index].custUserId;
-						//this.edit_cust.custCreateId = this.dataList[index].custCreateId ;
-						this.edit_cust.sex= this.dataList[index].sex ;
-						this.edit_cust.age= this.dataList[index].age ;
-						this.edit_cust.born= this.dataList[index].born ;
-						this.edit_cust.job = this.dataList[index].job ;
-						this.edit_cust.specialty = this.dataList[index].specialty ;
-						this.edit_cust.experience = this.dataList[index].experience ;
-						this.edit_cust.teachSchool = this.dataList[index].teachSchool ;
-					},
+        <h3 id="loadText" style="color: white">loading...</h3>
+    </div>
+</div>
 
-					pageHandler: function(page) {
-						this.page = page;
-						this.search();
-					},
+<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/iCheck/icheck.min.js"></script>
+<script src="../../../../../personmanager/src/main/webapp/aaa/plugins/adminLTE/js/app.min.js"></script>
+<script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data: {
+            dataList: [],
+            id: "",
+            name: "",
+            sex: "",
+            age: "",
+            born: "",
+            job: "",
+            specialty: "",
+            experience: "",
+            teachSchool: "",
+            //custCreatetime: "",
+            newname: "",
+            edit_cust: {
+                //id:0,
+                id: "",
+                name: "",
+                sex: "",
+                age: "",
+                born: "",
+                job: "",
+                specialty: "",
+                experience: "",
+                teachSchool: "",
+                //custCreatetime: ""
+                afterSchool: "",
+                tel: "",
+                address: "",
+                createtime: "",
+                content: "",
+                isstock: ""
+            },
+            searchEntity: {
+                name: '',
+                sex: '',
+                age: '',
+                born: '',
+            },
+            page: 1, //显示的是哪一页
+            pageSize: 10, //每一页显示的数据条数
+            total: 0, //记录总数
+            maxPage: 0 //最大页数
+        },
+        methods: {
 
-					search: function() {
-						var _this = this;
-						//发送ajax请求, 查询数据
-						axios.post('/findByPageC?pageNum=' + _this.page + "&rows=" + _this.pageSize, _this.searchEntity).then(function(response) {
-							_this.total = response.data.total;
-							_this.dataList = response.data.dataList;
-						})
-					},
+            addCust: function () {
+                var cust = {
+                    /*custCreatetime: new Data().toLocaleString()*/
+                };
+                cust.id = this.id;
+                cust.name = this.name;
+                cust.sex = this.sex;
+                cust.age = this.age;
+                cust.born = this.born;
+                cust.job = this.job;
+                cust.specialty = this.specialty;
+                cust.experience = this.experience;
+                cust.teachSchool = this.teachSchool;
+                /* 	console.log(this.name);
+                    console.log(this.born); */
+                this.dataList.push(cust);
+                //向后台添加数据
+                let params = new URLSearchParams();
+                params.append("id", this.id);
+                params.append("name", this.name);
+                params.append("sex", this.sex);
+                params.append("age", this.age);
+                params.append("born", this.born);
+                params.append("job", this.job);
+                params.append("specialty", this.specialty);
+                params.append("experience", this.experience);
+                params.append("teachSchool", this.teachSchool);
+                axios.post('/custInsert', params).then(function (rs) {
+                    if (rs.status == "200") {
+                        alert("客户创建成功！");
+                        window.location.reload();
+                    } else {
+                        alert("客户创建失败！");
+                        window.location.reload();
+                    }
+                    console.log("添加");
+                })
+                this.id = Number(this.id) + 1;
+            },
+            updateCust: function () {
+                for (var i = 0; i < this.dataList.length; i++) {
+                    if (this.dataList[i].id == this.edit_cust.id) {
+                        this.dataList[i].name = this.edit_cust.name;
+                        this.dataList[i].sex = this.edit_cust.sex;
+                        this.dataList[i].age = this.edit_cust.age;
+                        this.dataList[i].born = this.edit_cust.born;
+                        this.dataList[i].job = this.edit_cust.job;
+                        this.dataList[i].specialty = this.edit_cust.specialty;
+                        this.dataList[i].experience = this.edit_cust.experience;
+                        this.dataList[i].teachSchool = this.edit_cust.teachSchool;
+                        console.log(this.dataList[i].id);
+                        console.log(this.edit_cust.id);
+                        console.log(this.dataList[i].name);
+                        console.log(this.edit_cust.name);
+                        let params = new URLSearchParams();
+                        params.append("id", this.edit_cust.id);
+                        params.append("name", this.edit_cust.name);
+                        params.append("sex", this.edit_cust.sex);
+                        params.append("age", this.edit_cust.age);
+                        params.append("born", this.edit_cust.born);
+                        params.append("job", this.edit_cust.job);
+                        params.append("specialty", this.edit_cust.specialty);
+                        params.append("experience", this.edit_cust.experience);
+                        params.append("teachSchool", this.edit_cust.teachSchool);
+                        axios.post('/custUpdate', params).then(function (rs) {
+                            if (rs.status == "200") {
+                                alert("客户修改成功！");
+                                window.location.reload();
+                            } else {
+                                alert("客户修改失败！");
+                                window.location.reload();
+                            }
+                            console.log("添加");
+                        })
 
-					showLoading: function() {
-						$('#loadingModal').modal({
-							backdrop: 'static',
-							keyboard: false
-						});
-					},
+                        //axios.put('/custUpdate?id='+this.edit_cust.id,{
+                        /* id:this.edit_cust.id,
+                       name:this.edit_cust.name,
+                      sex:this.edit_cust.sex,
+                      age:this.edit_cust.age,
+                      born:this.edit_cust.born,
+                      job:this.edit_cust.job,
+                      specialty:this.edit_cust.specialty,
+                      experience:this.edit_cust.experience,
+                      teachSchool:this.edit_cust.teachSchool  */
+                        /*	}).then(function(rs){
+                              if(rs.status =="200"){
+                                  alert("客户修改成功！");
+                                  window.location.reload();
+                              }else{
+                                  alert("客户修改失败！");
+                                  window.location.reload();
+                              }
+                            });*/
+                    }
+                }
+            },
 
-					hideLoading: function(){
-						$('#loadingModal').modal('hide');
-					},
-				},
-					created: function() {
-						this.pageHandler(1);
-				}
-			/* 	mounted:function(){
-		 			var _this=this;
-		 			axios.get("http://localhost:8080/emp").then(function(rs){
-		 				//rs 表示请求成功后  获取到的数据  
-		 				
-		 				//将后台请求到的数据    赋值给  userlists
-                        _this.dataList=rs.data;		 				
-		 			})
-		 		} */
-			});
-		</script>
-	</body>
+            selCust: function () {
+                var newcustList = [];
+                for (var i = 0; i < this.dataList.length; i++) {
+                    if (this.dataList[i].name.indexOf(this.newname) > -1) {
+                        /* console.log(this.dataList[i].custCreatetime);
+                        console.log(this.dataList[i].name); */
+                        console.log(this.dataList[i].id);
+                        console.log(this.dataList[i].name);
+                        newcustList.push(this.dataList[i]);
+                    }
+                }
+                return newcustList;
+            },
+
+            delCust: function (index) {
+                var id = this.dataList[index].id;
+                if (confirm('确实要删除该客户吗?')) {
+                    //向后台数据发送删除的 数据
+                    axios.delete('/custDelete?id=' + id).then(function (rs) {
+                        if (rs.status == "200") {
+                            alert("客户删除成功！");
+                            window.location.reload();
+                        } else {
+                            alert("客户删除失败！");
+                            window.location.reload();
+                        }
+                        console.log(rs);
+                    })
+                    this.dataList.splice(index, 1);
+                }
+            },
+
+            showCust: function (index) {
+                this.edit_cust.id = this.dataList[index].id;
+                this.edit_cust.id = this.dataList[index].id;
+                this.edit_cust.name = this.dataList[index].name;
+                //this.edit_cust.custUserId = this.dataList[index].custUserId;
+                //this.edit_cust.custCreateId = this.dataList[index].custCreateId ;
+                this.edit_cust.sex = this.dataList[index].sex;
+                this.edit_cust.age = this.dataList[index].age;
+                this.edit_cust.born = this.dataList[index].born;
+                this.edit_cust.job = this.dataList[index].job;
+                this.edit_cust.specialty = this.dataList[index].specialty;
+                this.edit_cust.experience = this.dataList[index].experience;
+                this.edit_cust.teachSchool = this.dataList[index].teachSchool;
+            },
+
+            pageHandler: function (page) {
+                this.page = page;
+                this.search();
+            },
+
+            search: function () {
+                var _this = this;
+                //发送ajax请求, 查询数据
+                axios.post('/findByPageC?pageNum=' + _this.page + "&rows=" + _this.pageSize, _this.searchEntity).then(function (response) {
+                    _this.total = response.data.total;
+                    _this.dataList = response.data.dataList;
+                })
+            },
+
+            showLoading: function () {
+                $('#loadingModal').modal({
+                    backdrop: 'static',
+                    keyboard: false
+                });
+            },
+
+            hideLoading: function () {
+                $('#loadingModal').modal('hide');
+            },
+        },
+        created: function () {
+            this.pageHandler(1);
+        }
+        /* 	mounted:function(){
+                 var _this=this;
+                 axios.get("http://localhost:8080/emp").then(function(rs){
+                     //rs 表示请求成功后  获取到的数据
+
+                     //将后台请求到的数据    赋值给  userlists
+                    _this.dataList=rs.data;
+                 })
+             } */
+    });
+</script>
+</body>
 </html>

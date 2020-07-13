@@ -1,10 +1,13 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 import java.util.Arrays;
 import java.util.Scanner;
+
 /**
  * @author wl
  * @Data 2020-03-10 9:45
- * nimÎÊÌâ
+ * nimï¿½ï¿½ï¿½ï¿½
  */
 public class POJ1704 {
     public static void main(String[] args) {
@@ -23,22 +26,23 @@ public class POJ1704 {
             System.out.println(res);
         }
     }
-    static String deal(int[] A){
+
+    static String deal(int[] A) {
         int len = A.length;
         Arrays.sort(A);
         int res = 0;
-        if ((len&1)==1){   //ÆæÊý
-            for (int i = 0; i < len; i+=2) {
-                res ^= (i==0)?(A[i]-1):(A[i]-A[i-1]-1);
+        if ((len & 1) == 1) {   //ï¿½ï¿½ï¿½ï¿½
+            for (int i = 0; i < len; i += 2) {
+                res ^= (i == 0) ? (A[i] - 1) : (A[i] - A[i - 1] - 1);
             }
-        }else{
+        } else {
             for (int i = 1; i < len; i++) {
-                res ^= (A[i]-A[i-1]-1);
+                res ^= (A[i] - A[i - 1] - 1);
             }
         }
-        if (res==0){
+        if (res == 0) {
             return "Bob will win";
-        }else{
+        } else {
             return "Georgia will win";
         }
     }

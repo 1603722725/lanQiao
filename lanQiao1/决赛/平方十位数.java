@@ -1,37 +1,38 @@
-package ¾öÈü;
+package ï¿½ï¿½ï¿½ï¿½;
+
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/30 - 21:37
  */
-public class Æ½·½Ê®Î»Êý{
-    static boolean Judge(long num){              //ÅÐ¶Ï´ËÆ½·½ÊýÊÇ·ñ°üº¬0~9
-        int arr[] = {0,0,0,0,0,0,0,0,0,0};
+public class Æ½ï¿½ï¿½Ê®Î»ï¿½ï¿½{
+static boolean Judge(long num){              //ï¿½Ð¶Ï´ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½0~9
+        int arr[]={0,0,0,0,0,0,0,0,0,0};
         int tt=0;
         while(num!=0){
-            int d=(int)(num%10);    //´æ·Å¸öÎ»Êý
-            if(arr[d]==1){
-                return false;
-            }
-            arr[d]=1;
-            tt++;
-            num=num/10;
+        int d=(int)(num%10);    //ï¿½ï¿½Å¸ï¿½Î»ï¿½ï¿½
+        if(arr[d]==1){
+        return false;
         }
-        if(tt==10){     //Æ½·½¸ù´Ó30000¿ªÊ¼£¬Æ½·½Êý»¹Ã»µ½10Î»£¬¼ÓÒÔÅÐ¶Ï
-            return true;
+        arr[d]=1;
+        tt++;
+        num=num/10;
+        }
+        if(tt==10){     //Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½30000ï¿½ï¿½Ê¼ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½10Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
+        return true;
         }
         return false;
-    }
-    public static void main(String args[]) {
+        }
+public static void main(String args[]){
         long i=0;
         long max=0;
-        for(i=30000;i<100000;i++) {
-            if(Judge(i*i) == true){
-                if(i*i>max) {
-                    max=i*i;
-                }
-            }
+        for(i=30000;i<100000;i++){
+        if(Judge(i*i)==true){
+        if(i*i>max){
+        max=i*i;
+        }
+        }
         }
         System.out.println(max);
-    }
+        }
 
-}
+        }

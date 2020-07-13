@@ -1,63 +1,64 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
  * @author wl
  * @Data 2020-01-20 8:44
- * ²éÕÒÒÑÅÅĞòÊı×éÖĞºÍµÄÒò×Ó ×éÊı
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ĞºÍµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  */
-public class ÅÅĞòÊı×éÖĞÕÒºÍµÄÒò×Ó {
-    /**
-     * ¶şÔª×é  a+b=sum
-     * @param arr
-     * @param sum
-     * @return
-     */
-    public static int find2(int[] arr,int sum){
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒºÍµï¿½ï¿½ï¿½ï¿½ï¿½ {
+/**
+ * ï¿½ï¿½Ôªï¿½ï¿½  a+b=sum
+ *
+ * @param arr
+ * @param sum
+ * @return
+ */
+public static int find2(int[]arr,int sum){
         int left=0,right=arr.length-1;
         int count=0,a=1,b=1;
-        while (left<right){
-            if ((arr[right]+arr[left])==sum){
-                count++;
-                System.out.println(left+"=="+right);
-            }
+        while(left<right){
+        if((arr[right]+arr[left])==sum){
+        count++;
+        System.out.println(left+"=="+right);
+        }
 
-            while (arr[right]==arr[right-1]){
-                a++;
-                right--;
-            }
-            while (arr[left]==arr[left+1]){
-                b++;
-                left++;
-            }
-            if((arr[right]+arr[left])>sum){
-                right--;
-                left--;
-            }
-            left++;
+        while(arr[right]==arr[right-1]){
+        a++;
+        right--;
+        }
+        while(arr[left]==arr[left+1]){
+        b++;
+        left++;
+        }
+        if((arr[right]+arr[left])>sum){
+        right--;
+        left--;
+        }
+        left++;
         }
         return count+a*b-1;
-    }
-    public static int find3(int[] arr,int sum){
-        return 1;
-    }
-    public static void f2(int []arr,int k){
-        // p Îª×óÖ¸Õë£¬ r ÎªÓÒÖ¸Õë
-        int p = 0;
-        int r = arr.length-1;
-        System.out.print("½â·¨¶ş£º");
-        while(p<r){
-            if ((arr[p]+arr[r])<k) {
-                p++;
-            }else if ((arr[p]+arr[r])==k) {
-                System.out.print("("+arr[p]+","+arr[r]+")  ");
-                p++;
-            }else {
-                r--;
-            }
         }
-    }
-    public static void main(String[] args) {
-        int[] arr = {4,4,4,6,6};
+public static int find3(int[]arr,int sum){
+        return 1;
+        }
+public static void f2(int[]arr,int k){
+        // p Îªï¿½ï¿½Ö¸ï¿½ë£¬ r Îªï¿½ï¿½Ö¸ï¿½ï¿½
+        int p=0;
+        int r=arr.length-1;
+        System.out.print("ï¿½â·¨ï¿½ï¿½ï¿½ï¿½");
+        while(p<r){
+        if((arr[p]+arr[r])<k){
+        p++;
+        }else if((arr[p]+arr[r])==k){
+        System.out.print("("+arr[p]+","+arr[r]+")  ");
+        p++;
+        }else{
+        r--;
+        }
+        }
+        }
+public static void main(String[]args){
+        int[]arr={4,4,4,6,6};
         f2(arr,10);
-    }
-}
+        }
+        }

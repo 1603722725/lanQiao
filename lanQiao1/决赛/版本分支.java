@@ -1,42 +1,44 @@
-package ¾öÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½;
 import java.util.Scanner;
 /**
  * @Author: wl
  * @Date: 2019/5/16 21:52
- * µÝ¹é
+ * ï¿½Ý¹ï¿½
  */
-public class °æ±¾·ÖÖ§ {
-    static int a[];
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int Q = sc.nextInt();
-        a = new int[N+1];
-        for (int i=1;i<N;i++) {
-            int u = sc.nextInt();
-            int v = sc.nextInt();
-            a[v] = u;
+public class ï¿½æ±¾ï¿½ï¿½Ö§ {
+static int a[];
+public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int Q=sc.nextInt();
+        a=new int[N+1];
+        for(int i=1;i<N;i++){
+        int u=sc.nextInt();
+        int v=sc.nextInt();
+        a[v]=u;
         }
-        boolean b[] = new boolean[Q];
-        for (int i = 0; i < Q; i++) {
-            int x = sc.nextInt();
-            int y = sc.nextInt();
-            b[i] = show(x,y);
+        boolean b[]=new boolean[Q];
+        for(int i=0;i<Q; i++){
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        b[i]=show(x,y);
         }
-        for (int i = 0; i < Q; i++) {
-            if (b[i])
-                System.out.println("YES");
-            else
-                System.out.println("NO");
-        }
-    }
-
-    public static boolean show(int x,int y){       //xÎª×æ    yÎª×Ó
-        if (a[y] == x || x==y)
-            return true;
-        else if(a[y]==1)
-            return false;
+        for(int i=0;i<Q; i++){
+        if(b[i])
+        System.out.println("YES");
         else
-            return show(x,a[y]);
-    }
-}
+        System.out.println("NO");
+        }
+        }
+
+public static boolean show(int x,int y){       //xÎªï¿½ï¿½    yÎªï¿½ï¿½
+        if(a[y]==x||x==y)
+        return true;
+        else if(a[y]==1)
+        return false;
+        else
+        return show(x,a[y]);
+        }
+        }

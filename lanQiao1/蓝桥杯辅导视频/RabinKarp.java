@@ -1,4 +1,4 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
  * @author wl
@@ -6,24 +6,27 @@ package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
  */
 public class RabinKarp {
     static long seed = 31;
+
     public static void main(String[] args) {
         String m = "asdfghjkl";
         String p = "kl";
-        match(m,p);
+        match(m, p);
     }
-    static void match(String m,String p){
+
+    static void match(String m, String p) {
         long hash_p = hash(p);
-        for (int i = 0; i+p.length() <= m.length() ; i++) {
-            long hash_m = hash(m.substring(i,i+p.length()));
-            if (hash_m==hash_p)
-                System.out.println("match:"+i);
+        for (int i = 0; i + p.length() <= m.length(); i++) {
+            long hash_m = hash(m.substring(i, i + p.length()));
+            if (hash_m == hash_p)
+                System.out.println("match:" + i);
         }
     }
-    static long hash(String str){
-        long h=0;
+
+    static long hash(String str) {
+        long h = 0;
         for (int i = 0; i != str.length(); i++) {
-            h = seed*h + str.charAt(i);
+            h = seed * h + str.charAt(i);
         }
-        return h%Long.MAX_VALUE;
+        return h % Long.MAX_VALUE;
     }
 }

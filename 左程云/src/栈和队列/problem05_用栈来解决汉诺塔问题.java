@@ -1,14 +1,14 @@
-package Õ»ºÍ¶ÓÁÐ;
+package Õ»ï¿½Í¶ï¿½ï¿½ï¿½;
 
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/19 - 19:24
  */
-public class problem05_ÓÃÕ»À´½â¾öººÅµËþÎÊÌâ {
+public class problem05_ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
 //    public int hannoiProblem(int num,String left,String mid,string right){
 //
 //    }
-    public static void main(String[] args) {
+public static void main(String[]args){
 
-    }
-}
+        }
+        }

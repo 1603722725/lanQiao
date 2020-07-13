@@ -1,142 +1,148 @@
-package ÌìÌÝÈü;
+package ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 
 public class DP {
-	//1. ×î³¤¹«¹²×ÓÐòÁÐ£¨LCS£©£º
-	public static int LCS(String str1,String str2){
-		int m=str1.length();
-		int n=str2.length();
-		int[][] dp=new int[m+1][n+1];
-		//if(str1.charAt(i)==str2.charAt(j)) dp[i][j]==dp[i-1][j-1]+1;
-		//else dp[i][j]=max(dp[i-1][j],dp[i][j-1])
-		for(int i=1;i<=m;i++){
-			for(int j=1;j<=n;j++){
-				if(str1.charAt(i-1)==str2.charAt(j-1)) 
-					dp[i][j]=dp[i-1][j-1]+1;
-				else
-					dp[i][j]=Math.max(dp[i-1][j],dp[i][j-1]);
-			}
-		}
-		return dp[m][n];
-	}
-	//2.×î³¤¹«¹²×Ó×Ö·û´®£¨LCS£©£º
-	public static int LCString(String str1,String str2){
-		int m=str1.length();
-		int n=str2.length();
-		int longest=0;
-		int[][] dp=new int[m+1][n+1];  // ±íÊ¾³¤¶ÈÎªmnµÄÁ½¸ö×Ó´®µÄlcs
-		for(int i=1;i<=m;i++){
-			for(int j=1;j<=n;j++){
-				if(str1.charAt(i-1)==str2.charAt(j-1))
-					dp[i][j]=dp[i-1][j-1]+1;
-				else
-					dp[i][j]=0;
-				longest=Math.max(longest, dp[i][j]);
-			}
-		}
-		return longest;
-	}
-	//3.×î³¤µÝÔö×ÓÐòÁÐ£¨LIS£©£º¶¯Ì¬¹æ»®n2½â·¨
-	public static int LISDP(int[] a){
-		int[] dp=new int[a.length+1];
-		int res=0;
-		for(int i=1;i<a.length+1;i++){
-			int max=0;
-			for(int j=1;j<i;j++){
-				if(a[j-1]<=a[i-1]&&dp[j]>max)
-					max=dp[j];
-			}
-			dp[i]=max+1;
-			if(res<dp[i])
-				res=dp[i];
-		}
-		return res;
-	}
-	//3.×î³¤µÝÔö×ÓÐòÁÐ£¨LIS£©nlogn½â·¨£º
-	
-	//LISÓÐ¶¯Ì¬¹æ»®ºÍLCS×ªLIS£¨ÅÅÐò+LCS£©Á½ÖÖ n2·½·¨£¬»¹ÓÐÒ»¸önlogn·½·¨ÈçÏÂ£º
-	//¹¹ÔìÒ»¸öLIS£¨±¾Éí²»ÊÇÔ­±¾µÄLIS£©£¬±£Ö¤×îÄ©Î»¡£
-	static int len=0;
-	public static int LIS(int[] arr){
-		int[] lis=new int[arr.length];
-		lis[0]=arr[0];  //Ä¿Ç°LISÐòÁÐ³¤¶ÈÎª1£¬Ä©Î²Îªarr[0]
-		len=1;
-		for(int i=1;i<arr.length;i++){
-			if(arr[i]>=lis[len-1]){
-				lis[len]=arr[i];
-				len++;
-			}
-			else{		
-				lis[binarysearch(lis, arr[i])]=arr[i];
-			}
-		}
-		return len;
-	}
-	private static int binarysearch(int[] a,int key){
-		int left=0;
-		int right=len-1;
-		int mid=(left+right)/2;
-		while(left<right){
-			mid=left+(right-left)/2;
-			if(a[mid]<key)
-				left=mid+1;
-			else
-				right=mid;
-		}
-		return left;//right is also ok
-	}
-	//4.±à¼­¾àÀëÎÊÌâ£º
-	public static int editdis(String str1,String str2){
-		int m=str1.length();
-		int n=str2.length();
-		int[][] edit=new int[m+1][n+1]; // ·ÀÖ¹µÍ¶ËÔ½½çÒÔ¼°ÌØÊâÇé¿öi
-		for(int i=0;i<=m;i++)
-			edit[i][0]=i;
-		for(int i=0;i<=n;i++)
-			edit[0][i]=i;
-		for(int i=1;i<=m;i++){
-			for(int j=1;j<=n;j++){   // °ÑÕâÀïµÄjÐ´³ÉiÊÇºÜ³£¼ûµÄÒ»¸ö´íÎó
-				if(j>i) edit[i][j]=edit[i][i]+j-i;
-				else if(j<i) edit[i][j]=edit[j][j]+i-j;
-				else {
-					if(str1.charAt(i-1)==str2.charAt(j-1))
-						edit[i][j]=edit[i-1][j-1];
-					else
-						edit[i][j]=edit[i-1][j-1]+1;
-				}
-			}
-		}
-		return edit[m][n];
-	}
-	//5.ÅÐ¶ÏÊÇ·ñÎª×ÓÐòÁÐ
-	public static boolean isSubSeq(String str1,String str2){
-		int pointer1=0;
-		int pointer2=0;
-		while(pointer1<str1.length()&&pointer2<str2.length()){
-			if(str1.charAt(pointer1)==str2.charAt(pointer2))
-				pointer2++;
-			if(pointer2==str2.length()) return true;
-			pointer1++;
-		}
-		return false;
-	}
-	public static void main(String[] args){
-		//²âÊÔ³ÌÐò£ºÅÐ¶ÏÊÇ·ñÎª×Ó´®£¡
-		System.out.println("abcsdf".contains("abcd"));
-		//²âÊÔ³ÌÐò£ºÅÐ¶ÏÊÇ·ñÎª×ÓÐòÁÐ£¡
-		System.out.println(isSubSeq("abscdljjkjkefg", "abcdefg"));
-		//²âÊÔ³ÌÐò£ºÊä³ö×î³¤¹«¹²×ÓÐòÁÐµÄ³¤¶È
-		System.out.println(LCS("abscljjkjkefg", "abcdefg"));
-		//²âÊÔ³ÌÐò£ºÊä³ö×î³¤µÝÔö×ÓÐòÁÐLIS nlogn
-		int[] a={1,4,6,2,3,5,7};
-		System.out.println(LIS(a));
-		//²âÊÔ³ÌÐò£ºÊä³ö×î³¤µÝÔö×ÓÐòÁÐLISDP n2
-		System.out.println(LISDP(a));
-		//²âÊÔ³ÌÐò£ºÊä³ö×î³¤¹«¹²×Ó×Ö·û´®³¤¶È
-		System.out.println(LCString("abscljjkjkdefg", "abcdefg"));  //3
-		//²âÊÔ³ÌÐò£º±à¼­¾àÀë
-		System.out.println(editdis("kitten", "sitting"));  //3
-		
-		//int[] b={1,2,6};
-		//System.out.println(binarysearch(b,3));
-	}
+    //1. ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½LCSï¿½ï¿½ï¿½ï¿½
+    public static int LCS(String str1, String str2) {
+        int m = str1.length();
+        int n = str2.length();
+        int[][] dp = new int[m + 1][n + 1];
+        //if(str1.charAt(i)==str2.charAt(j)) dp[i][j]==dp[i-1][j-1]+1;
+        //else dp[i][j]=max(dp[i-1][j],dp[i][j-1])
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (str1.charAt(i - 1) == str2.charAt(j - 1))
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                else
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+        return dp[m][n];
+    }
+
+    //2.ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½LCSï¿½ï¿½ï¿½ï¿½
+    public static int LCString(String str1, String str2) {
+        int m = str1.length();
+        int n = str2.length();
+        int longest = 0;
+        int[][] dp = new int[m + 1][n + 1];  // ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Îªmnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó´ï¿½ï¿½ï¿½lcs
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (str1.charAt(i - 1) == str2.charAt(j - 1))
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                else
+                    dp[i][j] = 0;
+                longest = Math.max(longest, dp[i][j]);
+            }
+        }
+        return longest;
+    }
+
+    //3.ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½LISï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½æ»®n2ï¿½â·¨
+    public static int LISDP(int[] a) {
+        int[] dp = new int[a.length + 1];
+        int res = 0;
+        for (int i = 1; i < a.length + 1; i++) {
+            int max = 0;
+            for (int j = 1; j < i; j++) {
+                if (a[j - 1] <= a[i - 1] && dp[j] > max)
+                    max = dp[j];
+            }
+            dp[i] = max + 1;
+            if (res < dp[i])
+                res = dp[i];
+        }
+        return res;
+    }
+    //3.ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½LISï¿½ï¿½nlognï¿½â·¨ï¿½ï¿½
+
+    //LISï¿½Ð¶ï¿½Ì¬ï¿½æ»®ï¿½ï¿½LCS×ªLISï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+LCSï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ n2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½nlognï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½
+    //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½LISï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½LISï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ä©Î»ï¿½ï¿½
+    static int len = 0;
+
+    public static int LIS(int[] arr) {
+        int[] lis = new int[arr.length];
+        lis[0] = arr[0];  //Ä¿Ç°LISï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½Îª1ï¿½ï¿½Ä©Î²Îªarr[0]
+        len = 1;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] >= lis[len - 1]) {
+                lis[len] = arr[i];
+                len++;
+            } else {
+                lis[binarysearch(lis, arr[i])] = arr[i];
+            }
+        }
+        return len;
+    }
+
+    private static int binarysearch(int[] a, int key) {
+        int left = 0;
+        int right = len - 1;
+        int mid = (left + right) / 2;
+        while (left < right) {
+            mid = left + (right - left) / 2;
+            if (a[mid] < key)
+                left = mid + 1;
+            else
+                right = mid;
+        }
+        return left;//right is also ok
+    }
+
+    //4.ï¿½à¼­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£º
+    public static int editdis(String str1, String str2) {
+        int m = str1.length();
+        int n = str2.length();
+        int[][] edit = new int[m + 1][n + 1]; // ï¿½ï¿½Ö¹ï¿½Í¶ï¿½Ô½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½i
+        for (int i = 0; i <= m; i++)
+            edit[i][0] = i;
+        for (int i = 0; i <= n; i++)
+            edit[0][i] = i;
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jÐ´ï¿½ï¿½iï¿½ÇºÜ³ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                if (j > i) edit[i][j] = edit[i][i] + j - i;
+                else if (j < i) edit[i][j] = edit[j][j] + i - j;
+                else {
+                    if (str1.charAt(i - 1) == str2.charAt(j - 1))
+                        edit[i][j] = edit[i - 1][j - 1];
+                    else
+                        edit[i][j] = edit[i - 1][j - 1] + 1;
+                }
+            }
+        }
+        return edit[m][n];
+    }
+
+    //5.ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static boolean isSubSeq(String str1, String str2) {
+        int pointer1 = 0;
+        int pointer2 = 0;
+        while (pointer1 < str1.length() && pointer2 < str2.length()) {
+            if (str1.charAt(pointer1) == str2.charAt(pointer2))
+                pointer2++;
+            if (pointer2 == str2.length()) return true;
+            pointer1++;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Îªï¿½Ó´ï¿½ï¿½ï¿½
+        System.out.println("abcsdf".contains("abcd"));
+        //ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½
+        System.out.println(isSubSeq("abscdljjkjkefg", "abcdefg"));
+        //ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ³ï¿½ï¿½ï¿½
+        System.out.println(LCS("abscljjkjkefg", "abcdefg"));
+        //ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LIS nlogn
+        int[] a = {1, 4, 6, 2, 3, 5, 7};
+        System.out.println(LIS(a));
+        //ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LISDP n2
+        System.out.println(LISDP(a));
+        //ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println(LCString("abscljjkjkdefg", "abcdefg"));  //3
+        //ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ò£º±à¼­ï¿½ï¿½ï¿½ï¿½
+        System.out.println(editdis("kitten", "sitting"));  //3
+
+        //int[] b={1,2,6};
+        //System.out.println(binarysearch(b,3));
+    }
 }

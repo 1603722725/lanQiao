@@ -1,103 +1,109 @@
-package ¾öÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/5/7 - 23:34
  * BFS
  */
-public class Ñ§°ÔµÄÃÔ¹¬{
-    public final static int[][] move = {{-1, 0},{1,0},{0,-1},{0,1}};//·Ö±ð±íÊ¾ÏòÉÏ¡¢ÏÂ¡¢×ó¡¢ÓÒÒÆ¶¯Ò»²½
-    public final static String[] onePath = {"U","D","L","R"};       //·Ö±ð±íÊ¾ÏòÉÏ¡¢ÏÂ¡¢×ó¡¢ÓÒÐÐ×ß
-    static class point{       //ÄÚ²¿Àà£¬ÓÃÓÚ±íÊ¾µ±Ç°ÐÐ×ßµ½´ïµãÐÅÏ¢
-        public int x;         //µ±Ç°µ½´ïÎ»ÖÃºá×ø±ê
-        public int y;         //µ±Ç°µ½´ïÎ»ÖÃ×Ý×ø±ê
-        public int step;      //ÐÐ×ßµ½µ±Ç°¶¥µãËùÓÃ×Ü²½Êý
-        public String path;   //ÐÐ×ßµ½µ±Ç°¶¥µãµÄ¾ßÌåÂ·¾¶
-        point(int x, int y, int step, String path){
-            this.x = x;
-            this.y = y;
-            this.step = step;
-            this.path = path;
-        }
+public class Ñ§ï¿½Ôµï¿½ï¿½Ô¹ï¿½{
+public final static int[][]move={{-1,0},{1,0},{0,-1},{0,1}};//ï¿½Ö±ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ï¡ï¿½ï¿½Â¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ò»ï¿½ï¿½
+public final static String[]onePath={"U","D","L","R"};       //ï¿½Ö±ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ï¡ï¿½ï¿½Â¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+static class point {       //ï¿½Ú²ï¿½ï¿½à£¬ï¿½ï¿½ï¿½Ú±ï¿½Ê¾ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+    public int x;         //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½
+    public int y;         //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public int step;      //ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü²ï¿½ï¿½ï¿½
+    public String path;   //ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+
+    point(int x, int y, int step, String path) {
+        this.x = x;
+        this.y = y;
+        this.step = step;
+        this.path = path;
     }
 
-    //ÅÐ¶Ïµ±Ç°Î»ÖÃÊÇ·ñÊÇ¿ÉÐÐ×ßµÄÎ»ÖÃ£¬Èç²»ÄÜ·µ»Øfalse£¬·ñÔò·µ»Øtrue
-    public boolean check(int[][] matrix, point a){
+}
+
+    //ï¿½Ð¶Ïµï¿½Ç°Î»ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ßµï¿½Î»ï¿½Ã£ï¿½ï¿½ç²»ï¿½Ü·ï¿½ï¿½ï¿½falseï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½true
+    public boolean check(int[][] matrix, point a) {
         int n = matrix.length - 1, m = matrix[0].length - 1;
-        if(a.x < 1 || a.x > n || a.y < 1 || a.y > m || matrix[a.x][a.y] == 1)
+        if (a.x < 1 || a.x > n || a.y < 1 || a.y > m || matrix[a.x][a.y] == 1)
             return false;
         return true;
     }
 
-    //ÒÀ¾Ý×ÖµäÐò{D,L,R,U}£¬±È½Ï×Ö·û´®AºÍBµÄ´óÐ¡£¬Èç¹ûA > B·µ»Øtrue£¬·ñÔò·µ»Øfalse(PS:Á½Õß×Ö·û¸öÊýÏàÍ¬)
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½{D,L,R,U}ï¿½ï¿½ï¿½È½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Aï¿½ï¿½Bï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½A > Bï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½false(PS:ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬)
     public boolean judge(String A, String B) {
         char[] arrayA = A.toCharArray();
         char[] arrayB = B.toCharArray();
-        for(int i = 0, len = A.length();i < len;i++){
-            if(arrayA[i] < arrayB[i])
+        for (int i = 0, len = A.length(); i < len; i++) {
+            if (arrayA[i] < arrayB[i])
                 return false;
         }
         return true;
     }
 
-    //°ÑÊäÈëÊý¾Ý£¬±ä»»Îª¾ØÕó
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ä»»Îªï¿½ï¿½ï¿½ï¿½
     public int[][] getMatrix(String[] A, int m) {
         int[][] matrix = new int[A.length + 1][m + 1];
-        for(int i = 0;i < A.length;i++) {
+        for (int i = 0; i < A.length; i++) {
             char[] arrayA = A[i].toCharArray();
-            for(int j = 0;j < m;j++)
+            for (int j = 0; j < m; j++)
                 matrix[i + 1][j + 1] = arrayA[j] - '0';
         }
         return matrix;
     }
 
-    public void bfs(String[] A, int m){
+    public void bfs(String[] A, int m) {
         int[][] matrix = getMatrix(A, m);
         ArrayList<point> list = new ArrayList<point>();
-        list.add(new point(1,1,0,""));   //±íÊ¾´Ó¶¥µã(1,1)³ö·¢
-        int minStep = Integer.MAX_VALUE;  //ÓÃÓÚ¼ÇÂ¼µ½´ï×îÖÕ¶¥µãËùÐè×îÉÙ²½Êý
-        String minPath = "";         //ÓÃÓÚ¼ÇÂ¼µ½´ï×îÖÕ¶¥µãÂ·¾¶µÄ×îÐ¡×ÖµäÐòÐòÁÐ
-        while(list.size() != 0) {
-            point begin = list.get(0);  //»ñÈ¡Á´±íµÚÒ»¸ö¶¥µã£¬¿ªÊ¼½øÐÐbfs±éÀú
-            list.remove(0);       //É¾³ý½øÐÐ±éÀúµÄÆðÊ¼µã
+        list.add(new point(1, 1, 0, ""));   //ï¿½ï¿½Ê¾ï¿½Ó¶ï¿½ï¿½ï¿½(1,1)ï¿½ï¿½ï¿½ï¿½
+        int minStep = Integer.MAX_VALUE;  //ï¿½ï¿½ï¿½Ú¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù²ï¿½ï¿½ï¿½
+        String minPath = "";         //ï¿½ï¿½ï¿½Ú¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¶ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        while (list.size() != 0) {
+            point begin = list.get(0);  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ã£¬ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½bfsï¿½ï¿½ï¿½ï¿½
+            list.remove(0);       //É¾ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
 
-            if(begin.x == matrix.length - 1 && begin.y == matrix[0].length - 1){  //µ±¸Ã¶¥µãÎªÖÕµãÊ±
-                if(minStep > begin.step) {
+            if (begin.x == matrix.length - 1 && begin.y == matrix[0].length - 1) {  //ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½Îªï¿½Õµï¿½Ê±
+                if (minStep > begin.step) {
                     minStep = begin.step;
                     minPath = begin.path;
-                } else if(minStep == begin.step) {
-                    if(judge(minPath, begin.path))  //µ±minPath×ÖµäÐò´óÓÚbegin.stepÊ±
+                } else if (minStep == begin.step) {
+                    if (judge(minPath, begin.path))  //ï¿½ï¿½minPathï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½begin.stepÊ±
                         minPath = begin.path;
                 }
-                continue;   //´Ë´¦ÒÑ¾­ÊÇÖÕµã£¬²»ÐèÒª½øÐÐÏÂÃæbfs±éÀú
+                continue;   //ï¿½Ë´ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Õµã£¬ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bfsï¿½ï¿½ï¿½ï¿½
             }
 
-            for(int i = 0;i < 4;i++){  //Èç¹ûÎ´´ïµ½×îÖÕ¶¥µã(n, m)£¬½øÐÐbfs±éÀú(·Ö±ðÏòÉÏ¡¢ÏÂ¡¢×ó¡¢ÓÒÒÆ¶¯)
+            for (int i = 0; i < 4; i++) {  //ï¿½ï¿½ï¿½Î´ï¿½ïµ½ï¿½ï¿½ï¿½Õ¶ï¿½ï¿½ï¿½(n, m)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bfsï¿½ï¿½ï¿½ï¿½(ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ï¡ï¿½ï¿½Â¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½)
                 int x = begin.x + move[i][0];
                 int y = begin.y + move[i][1];
                 int step = begin.step + 1;
-                String path = begin.path + onePath[i] ;
+                String path = begin.path + onePath[i];
                 point temp = new point(x, y, step, path);
-                if(check(matrix, temp)) {  //µ±¶¥µãtempÊÇ¿Éµ½´ïµÄ¶¥µãÊ±
+                if (check(matrix, temp)) {  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½tempï¿½Ç¿Éµï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Ê±
                     list.add(temp);
-                    matrix[x][y] = 1;  //µ½´ï¸Ã¶¥µãºó£¬±ê¼Ç¸Ã¶¥µã²»¿Éµ½´ï£¬´Ë´¦°ÂÃØÊÇ´ó´ó¼õÉÙÁË¼ìË÷´ÎÊý£¨Èç¹û»»³ÉÆä¸¸Ä¸¶¥µã²»¿Éµ½´ï£¬Ôò»áÔËÐÐ³¬Ê±£©
+                    matrix[x][y] = 1;  //ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ó£¬±ï¿½Ç¸Ã¶ï¿½ï¿½ã²»ï¿½Éµï¿½ï¿½ï£¬ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä¸¸Ä¸ï¿½ï¿½ï¿½ã²»ï¿½Éµï¿½ï¿½ï£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Ê±ï¿½ï¿½
                 }
             }
         }
-        //Êä³ö×îÖÕ½á¹û
-        System.out.println(minStep+"\n"+minPath);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ½ï¿½ï¿½
+        System.out.println(minStep + "\n" + minPath);
         return;
     }
 
     public static void main(String[] args) {
-        Ñ§°ÔµÄÃÔ¹¬ test = new Ñ§°ÔµÄÃÔ¹¬();
+        Ñ§ï¿½Ôµï¿½ï¿½Ô¹ï¿½test = new Ñ§ï¿½Ôµï¿½ï¿½Ô¹ï¿½();
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int m = in.nextInt();
-        in.nextLine();  //´Ë´¦ÌØ±ð×¢Òâ£¬ÊäÈëÍêÕûÊý£¬ÏÂÃæ½Ó×ÅÊä³ö×Ö·û´®£¬´Ë´¦´¦Àí»»ÐÐ²Ù×÷
+        in.nextLine();  //ï¿½Ë´ï¿½ï¿½Ø±ï¿½×¢ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
         String[] A = new String[n];
-        for(int i = 0;i < n;i++)
+        for (int i = 0; i < n; i++)
             A[i] = in.nextLine();
         test.bfs(A, m);
     }

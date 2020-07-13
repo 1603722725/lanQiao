@@ -1,11 +1,14 @@
-package À¶ÇÅ±­;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Main02{
-	  public static void main(String[] args) {
-	    Scanner sc=new Scanner(System.in);
-	    char a='a';
-	    char b='a';
-	    System.out.println(a==b);
-	  }
+
+public class Main02 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char a = 'a';
+        char b = 'a';
+        System.out.println(a == b);
+    }
 }

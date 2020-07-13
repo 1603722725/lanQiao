@@ -1,9 +1,11 @@
-package À¶ÇÅ±­;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½;
 
 import java.util.Scanner;
 
 public class Demo01 {
-	public static void main(String[] args) {
-		String str="nvndsnvidf";
-	}
+    public static void main(String[] args) {
+        String str = "nvndsnvidf";
+    }
 }

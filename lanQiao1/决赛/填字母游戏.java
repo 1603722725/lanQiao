@@ -1,51 +1,53 @@
-package ¾öÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/5/3 - 19:55
- * 20·Ö
+ * 20ï¿½ï¿½
  */
-public class Ìî×ÖÄ¸ÓÎÏ· {
-    public static void main(String[] args) throws IOException{
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int num = Integer.parseInt(bf.readLine());
-        for (int i = 0; i < num; i++) {
-            String str = bf.readLine();
-            System.out.println(f(str));
+public class ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ï·{
+public static void main(String[]args)throws IOException{
+        BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+        int num=Integer.parseInt(bf.readLine());
+        for(int i=0;i<num; i++){
+        String str=bf.readLine();
+        System.out.println(f(str));
         }
-    }
+        }
 
-    public static int f(String str){
+public static int f(String str){
         if(str.indexOf("LOL")!=-1)
-            return -1;
+        return-1;
         if(str.indexOf("*")==-1)
-            return 0;
-        int res = -1;
-        char c[] = str.toCharArray();
-        for (int i = 0; i <str.length(); i++){
-            if(c[i]=='*'){
-                c[i]= 'L';
-                res = Math.max(res,-f(new String(c)));
-                if(res == 1){        //»ØËİ
-                    c[i]='*';
-                    return 1;
-                }
+        return 0;
+        int res=-1;
+        char c[]=str.toCharArray();
+        for(int i=0;i<str.length();i++){
+        if(c[i]=='*'){
+        c[i]='L';
+        res=Math.max(res,-f(new String(c)));
+        if(res==1){        //ï¿½ï¿½ï¿½ï¿½
+        c[i]='*';
+        return 1;
+        }
 
-                c[i]= 'O';
-                res = Math.max(res,-f(new String(c)));
-                if(res == 1){
-                    c[i]='*';
-                    return 1;
-                }
-                c[i]='*';
-            }
+        c[i]='O';
+        res=Math.max(res,-f(new String(c)));
+        if(res==1){
+        c[i]='*';
+        return 1;
+        }
+        c[i]='*';
+        }
         }
         return res;
-    }
-}
-//Âú·Ö   100
+        }
+        }
+//ï¿½ï¿½ï¿½ï¿½   100
 /*
 import java.util.ArrayList;
         import java.util.HashMap;
@@ -68,7 +70,7 @@ class Main{
         }
 //	System.out.println(System.currentTimeMillis()-currentTimeMillis);
     }
-    private static int adv() {//Ô¤´¦Àí
+    private static int adv() {//Ô¤ï¿½ï¿½ï¿½ï¿½
 
         int index=0;
         int a,b,len1 = 0,len2=0;
@@ -132,23 +134,23 @@ class Main{
     private static int f() {
 
         if(str.contains("*OL")||str.contains("L*L")||str.contains("LO*"))
-            return 1;//ÖÕÖ¹Ìõ¼ş
+            return 1;//ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½
         if(!str.contains("*"))
             return 0;
 
-        //Èç¹ûL****»òÕß*****L
+        //ï¿½ï¿½ï¿½L****ï¿½ï¿½ï¿½ï¿½*****L
         if((str.startsWith("L***")&&!str.substring(1).contains("O")&&!str.substring(1).contains("L"))
                 ||
                 (str.endsWith("***L")&&!str.substring(0,str.length()-1).contains("O")&&!str.substring(0,str.length()-1).contains("L")))
             return (str.length()%2==0)?1:-1;
 
-        List<Integer> indexs=index(str);//·µ»Ø*ºÅÏÂ±êÊı×é
+        List<Integer> indexs=index(str);//ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½ï¿½ï¿½
 
         int [] result=new int[indexs.size()*2];
         int k=0;
         for(int i=0;i<indexs.size();i++)
         {
-            //»»
+            //ï¿½ï¿½
             str=rep(str, indexs.get(i), 'L');
 
             if(map.containsKey(tri(str))){
@@ -200,13 +202,13 @@ class Main{
         return str;
     }
 
-    //replaceº¯Êı
+    //replaceï¿½ï¿½ï¿½ï¿½
     private static String rep(String str,int index,char a)
     {
         return str.substring(0,index)+a+str.substring(index+1);
     }
 
-    //voteº¯Êı(È«Îª1·µ»Ø-1,ÓĞÒ»¸ö-1·µ»Ø1)
+    //voteï¿½ï¿½ï¿½ï¿½(È«Îª1ï¿½ï¿½ï¿½ï¿½-1,ï¿½ï¿½Ò»ï¿½ï¿½-1ï¿½ï¿½ï¿½ï¿½1)
     private static int vote(int []a)
     {
         int min=1;
@@ -217,7 +219,7 @@ class Main{
         return 0-min;
     }
 
-    //·µ»Ø*ÏÂ±êÊı×é
+    //ï¿½ï¿½ï¿½ï¿½*ï¿½Â±ï¿½ï¿½ï¿½ï¿½ï¿½
     private static List index(String nextLine) {
         List<Integer> list=new ArrayList<Integer>();
         int qian=0;

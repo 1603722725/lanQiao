@@ -1,6 +1,8 @@
 package leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * @author wl
  * @Data 2020-02-19 17:39
@@ -8,19 +10,20 @@ import java.util.List;
 public class Test03 {
     public static void main(String[] args) {
         List<Addr> list = new ArrayList<>();
-        Addr addr1 = new Addr("张三","中国","江西","南昌","南山");
-        Addr addr2 = new Addr("李四","中国","广东","深圳","布吉");
+        Addr addr1 = new Addr("锟斤拷锟斤拷", "锟叫癸拷", "锟斤拷锟斤拷", "锟较诧拷", "锟斤拷山");
+        Addr addr2 = new Addr("锟斤拷锟斤拷", "锟叫癸拷", "锟姐东", "锟斤拷锟斤拷", "锟斤拷锟斤拷");
         list.add(addr1);
         list.add(addr2);
-        for (Addr ll:list) {
-            System.out.println(ll.name+"   "+ll.country+"  "+ll.province+"  "+ll.city+"  "+ll.street);
+        for (Addr ll : list) {
+            System.out.println(ll.name + "   " + ll.country + "  " + ll.province + "  " + ll.city + "  " + ll.street);
         }
-       // System.out.println(list);
+        // System.out.println(list);
     }
+
     /**
-     * 编写一个程序，使用集合存储客户的邮件地址。地址中应该包含姓名，街道，市（县），省（自治区），国家（地区）然后显示集合中的内容；要求使用集合对象来实现
+     * 锟斤拷写一锟斤拷锟斤拷锟斤拷使锟矫硷拷锟较存储锟酵伙拷锟斤拷锟绞硷拷锟斤拷址锟斤拷锟斤拷址锟斤拷应锟矫帮拷锟斤拷锟斤拷锟斤拷锟斤拷锟街碉拷锟斤拷锟叫ｏ拷锟截ｏ拷锟斤拷省锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟揭ｏ拷锟斤拷锟斤拷锟斤拷然锟斤拷锟斤拷示锟斤拷锟斤拷锟叫碉拷锟斤拷锟捷ｏ拷要锟斤拷使锟矫硷拷锟较讹拷锟斤拷锟斤拷实锟斤拷
      */
-    static class Addr{
+    static class Addr {
         String name;
         String country;
         String province;

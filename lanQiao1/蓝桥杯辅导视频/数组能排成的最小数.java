@@ -1,4 +1,6 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -7,24 +9,24 @@ import java.util.Comparator;
  * @author wl
  * @Data 2020-01-20 22:12
  */
-public class Êý×éÄÜÅÅ³ÉµÄ×îÐ¡Êý {
-    public static int f(Integer[] arr){
-        Arrays.sort(arr, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                String s1 = o1+""+o2;
-                String s2 = o2+""+o1;
-                return s1.compareTo(s2);
-            }
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å³Éµï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ {
+public static int f(Integer[]arr){
+        Arrays.sort(arr,new Comparator<Integer>(){
+@Override
+public int compare(Integer o1,Integer o2){
+        String s1=o1+""+o2;
+        String s2=o2+""+o1;
+        return s1.compareTo(s2);
+        }
         });
-        StringBuilder sb = new StringBuilder();
-        for (int i=0;i<arr.length;i++)
-            sb.append(arr[i]);
+        StringBuilder sb=new StringBuilder();
+        for(int i=0;i<arr.length;i++)
+        sb.append(arr[i]);
         return Integer.parseInt(sb.toString());
-    }
-    public static void main(String[] args) {
-        Integer[] arr = {3,32,321,1};
-        int res = f(arr);
+        }
+public static void main(String[]args){
+        Integer[]arr={3,32,321,1};
+        int res=f(arr);
         System.out.println(res);
-    }
-}
+        }
+        }

@@ -1,51 +1,56 @@
-package À¶ÇÅ±­;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½;
 import java.util.Scanner;
 import java.util.TreeSet;
-public class °¢Àï°Í°ÍÓëËÄÊ®´óµÁ {
-    public static void main(String[] args){
-        TreeSet<Obj> set = new TreeSet<>();
-        Scanner in = new Scanner(System.in );
-        int n = in.nextInt();
-        for (int i = 0; i < n; i++) {
-            int a, b;
-            a = in.nextInt();
-            b = in.nextInt();
-            for (int j = 0; j < a; j++) {
-                set.add( new Obj( in.nextDouble(), in.nextDouble() ) );
-            }
-            double sum=0.0;
-            for (Obj obj:set) {
-                if( b>obj.w ) {
-                    b-=obj.w;
-                    sum+=obj.v;
-                }
-                else{
-                    sum+=b * obj.p;
-                    break;
-                }
-            }
-            if (sum - (int) sum == 0) {
-                System.out.println( (int) sum );
-            } else {
-                System.out.printf("%.1f", sum );
 
-            }
-            set.clear();
+public class ï¿½ï¿½ï¿½ï¿½Í°ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ {
+public static void main(String[]args){
+        TreeSet<Obj> set=new TreeSet<>();
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=0;i<n; i++){
+        int a,b;
+        a=in.nextInt();
+        b=in.nextInt();
+        for(int j=0;j<a; j++){
+        set.add(new Obj(in.nextDouble(),in.nextDouble()));
         }
+        double sum=0.0;
+        for(Obj obj:set){
+        if(b>obj.w){
+        b-=obj.w;
+        sum+=obj.v;
+        }
+        else{
+        sum+=b*obj.p;
+        break;
+        }
+        }
+        if(sum-(int)sum==0){
+        System.out.println((int)sum);
+        }else{
+        System.out.printf("%.1f",sum);
+
+        }
+        set.clear();
+        }
+        }
+
+static class Obj implements Comparable {
+    double w;
+    double v;
+    double p; //ï¿½Ô¼Û±ï¿½
+
+    public Obj(double w, double v) {
+        this.w = w;
+        this.v = v;
+        this.p = v / w;
     }
 
-    static class Obj implements Comparable{
-        double w;
-        double v;
-        double p; //ÐÔ¼Û±È
-        public Obj(double w, double v) {
-            this.w = w;
-            this.v = v;
-            this.p = v/w;
-        }
-        @Override
-        public int compareTo(Object o) {
-            return Double.compare( ((Obj)o).p,p );
-        }
+    @Override
+    public int compareTo(Object o) {
+        return Double.compare(((Obj) o).p, p);
     }
+}
 }

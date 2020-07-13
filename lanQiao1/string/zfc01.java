@@ -1,22 +1,22 @@
 package string;
 
 public class zfc01 {
-	public static void main(String[] args) {
-		String str1 ="you are cool";
-		System.out.println(reverse(str1));
-	}
+    public static void main(String[] args) {
+        String str1 = "you are cool";
+        System.out.println(reverse(str1));
+    }
+
+    public static String reverse(String str) {
+        String str1 = reverseString1(str);
+        String[] words = str1.split("\\s");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < words.length; i++) {
+            sb.append(reverseString1(words[i]) + " ");
+        }
+        return sb.deleteCharAt(sb.length() - 1).toString();
+    }
 	
-	public static String reverse(String str){
-		String str1 = reverseString1(str);
-		String[] words = str1.split("\\s");
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < words.length; i++) {
-			sb.append(reverseString1(words[i])+" ");
-		}
-		return sb.deleteCharAt(sb.length()-1).toString();
-	}
-	
-	/*//×Ö·ûÑ¹Ëõ
+	/*//ï¿½Ö·ï¿½Ñ¹ï¿½ï¿½
 	public static String zipString(String str){
 		int count = 0;
 		char last =0;
@@ -41,7 +41,7 @@ public class zfc01 {
 		return sb.toString();
 	}*/
 	
-	/*//ÅÐ¶ÏÁ½×Ö·û´®ÖÐµÄ¸÷×Ö·ûÊýÊÇ·ñÏàÍ¬
+	/*//ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ÐµÄ¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬
 	public static boolean isEqual(String str1,String str2){
 		int m = str1.length();
 		int n = str2.length();
@@ -63,18 +63,19 @@ public class zfc01 {
 		}
 		return q;
 	}*/
-	
-	//×Ö·û´®·´×ª
-	public static  String reverseString(String str){
-		int len =str.length();
-		char a[] = new char [len];
-		for(int i=0;i<len;i++){
-			a[i]=str.charAt(len-1-i);
-		}
-		return new String(a);
-	}
-	public static  String reverseString1(String str){
-		StringBuffer sb = new StringBuffer(str);
-		return sb.reverse().toString();
-	}
+
+    //ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ª
+    public static String reverseString(String str) {
+        int len = str.length();
+        char a[] = new char[len];
+        for (int i = 0; i < len; i++) {
+            a[i] = str.charAt(len - 1 - i);
+        }
+        return new String(a);
+    }
+
+    public static String reverseString1(String str) {
+        StringBuffer sb = new StringBuffer(str);
+        return sb.reverse().toString();
+    }
 }

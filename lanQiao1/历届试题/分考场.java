@@ -1,54 +1,57 @@
-package Àú½ìÊÔÌâ;
+package
+
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 import java.util.Scanner;
-public class ·Ö¿¼³¡ {
-	static boolean[][] know;//ÊÇ·ñÊìÏ¤
-	static int[][] examRoom;//¿¼³¡°²ÅÅ
-	static int res = 101,n;
-	public static void main(String[] args) {
-		Scanner cin = new Scanner(System.in);
-		n = cin.nextInt();
-		know = new boolean[n+1][n+1];
-		examRoom = new int[n][n+1];
-		int m = cin.nextInt();
-		for(int i=0;i<m;i++) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			know[a][b]=know[b][a]=true;
-		}
-		dfs(1,0);
-		System.out.println(res);
-		cin.close();
-	}
-	static void dfs(int examineeId,int examRoomAmo) {
-		//¿¼³¡µÄÊıÁ¿´óÓÚ»òµÈÓÚ³öÏÖ¹ıµÄ×îĞ¡µÄ¿¼³¡ÊıÁ¿£¬±ğ¿´ÁË£¬ÔÙÅªÒ²´óÁË
-		if(examRoomAmo>=res) return ;
-		//µ±ÎÒÃÇµÄ¿¼Éú±àºÅ´óÓÚ¿¼ÉúÈËÊı,ËùÓĞ¿¼Éú¶¼°²ÅÅºÃÁË
-		if(examineeId>n) {
-			res = Math.min(res, examRoomAmo);//ÕâÊ±ºò¼ÇÂ¼×îĞ¡µÄ¿¼³¡ÊıÁ¿
-			return;
-		}
- 
-		A:for(int i=0;i<examRoomAmo;i++) {	//±éÀúÒÑ¾­¿ª±ÙµÄÃ¿¸ö¿¼³¡
-			int examineeAmo = examRoom[i][n];//µ±Ç°¿¼³¡µÄ×îºóÒ»Î»´æ·Åµ±Ç°¿¼³¡µÄ¿¼ÉúÊıÁ¿
-			int j;
-			for(j=0;j<examineeAmo;j++) {	//±éÀúµ±Ç°¿¼³¡ÖĞÃ¿¸ö¿¼Éú£¬ÅĞ¶ÏÊÇ·ñÈÏÊ¶
-				if(know[examRoom[i][j]][examineeId]) {//Èç¹ûÁ½¸ö¿¼ÉúÈÏÊ¶
-					continue A;		//Ìøµ½ÏÂÒ»¸ö¿¼³¡
-				}
-			}
-			if(j==examineeAmo){
-				//µ±Ç°¿¼³¡µÄ¿¼ÉúÓëÎÒÃÇµÄ¿¼Éú¶¼²»ÈÏÊ¶£¬°ÑÎÒÃÇµÄ¿¼Éú¼ÓÈëµ±Ç°¿¼³¡
-				examRoom[i][examRoom[i][n]++] = examineeId;
-				//dfsÅĞ¶ÏÏÂÒ»¸ö¿¼Éú·ÅÔÚÄÄ¸ö¿¼³¡
-				dfs(examineeId+1,examRoomAmo);
-				//Ïû³ıÎÒÃÇÉÏÒ»²½µÄdfs¶ÔÕâ´ÎÔì³ÉÓ°Ïì
-				examRoom[i][n]--;
-			}
-		}
-		//Ç°±ßÃ¿¸ö¿¼³¡¶¼ÈÏÊ¶£¬ĞÂ½¨¿¼³¡
-		//°ÑÎÒÃÇµÄ¿¼Éú·ÅÔÚĞÂ¿¼³¡µÄµÚÒ»¸öÎ»ÖÃ£¬ĞÂ¿¼³¡¿¼ÉúÊıÁ¿+1
-		examRoom[examRoomAmo][examRoom[examRoomAmo][n]++] = examineeId;
-		dfs(examineeId+1,examRoomAmo+1);//dfsÏÂÒ»¸ö¿¼Éú
-		--examRoom[examRoomAmo][n];//Ïû³ıÓ°Ïì
-	}
-}
+
+public class ï¿½Ö¿ï¿½ï¿½ï¿½ {
+static boolean[][]know;//ï¿½Ç·ï¿½ï¿½ï¿½Ï¤
+static int[][]examRoom;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+static int res=101,n;
+public static void main(String[]args){
+        Scanner cin=new Scanner(System.in);
+        n=cin.nextInt();
+        know=new boolean[n+1][n+1];
+        examRoom=new int[n][n+1];
+        int m=cin.nextInt();
+        for(int i=0;i<m;i++){
+        int a=cin.nextInt();
+        int b=cin.nextInt();
+        know[a][b]=know[b][a]=true;
+        }
+        dfs(1,0);
+        System.out.println(res);
+        cin.close();
+        }
+static void dfs(int examineeId,int examRoomAmo){
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½Ú³ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ÅªÒ²ï¿½ï¿½ï¿½ï¿½
+        if(examRoomAmo>=res)return;
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ÇµÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½Å´ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ğ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½ï¿½ï¿½
+        if(examineeId>n){
+        res=Math.min(res,examRoomAmo);//ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ğ¡ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        return;
+        }
+
+        A:for(int i=0;i<examRoomAmo;i++){    //ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ùµï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int examineeAmo=examRoom[i][n];//ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Î»ï¿½ï¿½Åµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int j;
+        for(j=0;j<examineeAmo;j++){    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ê¶
+        if(know[examRoom[i][j]][examineeId]){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶
+        continue A;        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        }
+        }
+        if(j==examineeAmo){
+        //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÇµÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÇµÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ëµ±Ç°ï¿½ï¿½ï¿½ï¿½
+        examRoom[i][examRoom[i][n]++]=examineeId;
+        //dfsï¿½Ğ¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+        dfs(examineeId+1,examRoomAmo);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½dfsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½
+        examRoom[i][n]--;
+        }
+        }
+        //Ç°ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ÇµÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¿ï¿½ï¿½ï¿½ï¿½Äµï¿½Ò»ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½Â¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+1
+        examRoom[examRoomAmo][examRoom[examRoomAmo][n]++]=examineeId;
+        dfs(examineeId+1,examRoomAmo+1);//dfsï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        --examRoom[examRoomAmo][n];//ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½
+        }
+        }

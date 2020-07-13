@@ -1,31 +1,35 @@
-package Õ»ºÍ¶ÓÁÐ;
+package Õ»
+
+ï¿½Í¶ï¿½ï¿½ï¿½;
 
 import java.util.Stack;
 
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/17 - 21:20
- * ½öÓÃµÝ¹éº¯ÊýºÍÕ»²Ù×÷ÄæÐòÒ»¸öÕ»
+ * ï¿½ï¿½ï¿½ÃµÝ¹éº¯ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Õ»
  */
 public class problem03_ReverseStack {
-    //È¡Õ»µ×ÔªËØ²¢ÒÆ³ý
-    public static int getAndRemoveLastElement(Stack<Integer> stack){
+    //È¡Õ»ï¿½ï¿½Ôªï¿½Ø²ï¿½ï¿½Æ³ï¿½
+    public static int getAndRemoveLastElement(Stack<Integer> stack) {
         int result = stack.pop();
-        if(stack.isEmpty()){
+        if (stack.isEmpty()) {
             return result;
-        }else{
+        } else {
             int last = getAndRemoveLastElement(stack);
             stack.push(result);
-            return  last;
+            return last;
         }
     }
-    public static void reverse(Stack<Integer>stack){
+
+    public static void reverse(Stack<Integer> stack) {
         if (stack.isEmpty())
             return;
-        int i=getAndRemoveLastElement(stack);
+        int i = getAndRemoveLastElement(stack);
         reverse(stack);
         stack.push(i);
     }
+
     public static void main(String[] args) {
         Stack<Integer> test = new Stack<Integer>();
         test.push(1);

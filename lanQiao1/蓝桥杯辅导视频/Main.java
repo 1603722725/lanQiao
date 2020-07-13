@@ -1,56 +1,61 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Stack;
 
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/24 - 21:32
  */
 import java.util.Scanner;
+
 public class Main {
     static int a[];
+
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        String s =sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         sc.close();
-        String ss[]=s.split(" ");
-        a =new int[ss.length];
-        for(int i=0;i<ss.length;i++) {
-            a[i]=Integer.parseInt(ss[i]);
+        String ss[] = s.split(" ");
+        a = new int[ss.length];
+        for (int i = 0; i < ss.length; i++) {
+            a[i] = Integer.parseInt(ss[i]);
         }
-        for(int i=0;i<a.length-1;i++) {
-            int org=a[i];//ÒÀ´ÎÑ¡Ò»¸öºÍÉÐ
-            for(int j=a[i]+1;j<a[i+1];j++) {//±éÀúÐ¡ºÍÉÐ¿ÉÒÔ×ßµÄÂ·
-                a[i]=j;
-                if(check()) {
-                    System.out.println(org+" "+a[i]);
+        for (int i = 0; i < a.length - 1; i++) {
+            int org = a[i];//ï¿½ï¿½ï¿½ï¿½Ñ¡Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            for (int j = a[i] + 1; j < a[i + 1]; j++) {//ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ßµï¿½Â·
+                a[i] = j;
+                if (check()) {
+                    System.out.println(org + " " + a[i]);
                     return;
                 }
             }
-            //»ØËÝ
-            a[i]=org;
+            //ï¿½ï¿½ï¿½ï¿½
+            a[i] = org;
         }
         System.out.println("-1");
     }
-    private static boolean check() {//¼ì²éµ±Ç°ÇéÐÎÊÇ·ñÄÜÓ®
-        int one[] =new int[32];
-        int maxlen =0;
-        for(int i=0;i<a.length-1;i+=2) {//½«Á½¸öÐ¡ºÍÉÐ·ÖÎªÒ»×é
-            String temp=Integer.toBinaryString(a[i+1]-a[i]-1);
-            int len =temp.length();
-            if(len>maxlen) maxlen =len;
-            for(int j=len-1;j>=0;j--) {
-                if(temp.charAt(j)=='1') {
-                    one[len-j-1] +=1;
+
+    private static boolean check() {//ï¿½ï¿½éµ±Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ó®
+        int one[] = new int[32];
+        int maxlen = 0;
+        for (int i = 0; i < a.length - 1; i += 2) {//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ð·ï¿½ÎªÒ»ï¿½ï¿½
+            String temp = Integer.toBinaryString(a[i + 1] - a[i] - 1);
+            int len = temp.length();
+            if (len > maxlen) maxlen = len;
+            for (int j = len - 1; j >= 0; j--) {
+                if (temp.charAt(j) == '1') {
+                    one[len - j - 1] += 1;
                 }
             }
         }
-        for(int i=0;i<maxlen;i++) {
-            if(one[i]%2!=0) {//Èç¹ûÓÐÒ»ÁÐ1µÄ¸öÊý²»ÎªÅ¼Êý£¬ÎÒ±ØÊä
+        for (int i = 0; i < maxlen; i++) {
+            if (one[i] % 2 != 0) {//ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½1ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÅ¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿½
                 return false;
             }
         }
-        return true;//·ñÔòÎÒ¾ÍÓ®
+        return true;//ï¿½ï¿½ï¿½ï¿½ï¿½Ò¾ï¿½Ó®
     }
 }

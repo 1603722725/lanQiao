@@ -1,24 +1,27 @@
-package ÌìÌİÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 import java.util.*;
+
 public class Main001 {
-	public static void main(String[] args) {
-		Scanner cin = new Scanner(System.in);
-		String s = "abcdefghijklmnopqrs";
-		String ss = "";
-		for (int i = 1; i <= 106; i++) {
-			ss += s;
-		}
-		char[] x = ss.toCharArray();
-		int length=x.length;
-		while (length != 1) {
-			int k = 0;
-			for (int i = 0; i < length; i++) {//i´Ó0¿ªÊ¼iÎªÅ¼ÊıÊ±Ô­ĞòÁĞÎªÆæÊı
-				if (i % 2 != 0)//Ô­ĞòÁĞÎªÅ¼Êı
-					x[k++] = x[i];//½«ĞòÁĞÖĞµÄÊıÒÆµ½×îÇ°Ãæ
-				else length--;
-			}
-		}
- 
-		System.out.println(x[0]);
-	}
+    public static void main(String[] args) {
+        Scanner cin = new Scanner(System.in);
+        String s = "abcdefghijklmnopqrs";
+        String ss = "";
+        for (int i = 1; i <= 106; i++) {
+            ss += s;
+        }
+        char[] x = ss.toCharArray();
+        int length = x.length;
+        while (length != 1) {
+            int k = 0;
+            for (int i = 0; i < length; i++) {//iï¿½ï¿½0ï¿½ï¿½Ê¼iÎªÅ¼ï¿½ï¿½Ê±Ô­ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
+                if (i % 2 != 0)//Ô­ï¿½ï¿½ï¿½ï¿½ÎªÅ¼ï¿½ï¿½
+                    x[k++] = x[i];//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½Ç°ï¿½ï¿½
+                else length--;
+            }
+        }
+
+        System.out.println(x[0]);
+    }
 }

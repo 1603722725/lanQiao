@@ -1,98 +1,101 @@
-package ¾öÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/5/3 - 16:41
- * 100·Ö
- * ´Ë´¦ÊäÈë±ØĞëÓÃBufferedReader£¬Èç¹ûÓÃScannerÓÃÀı¹ı²»Íê
- * ×ÔĞĞ°Ù¶ÈBufferedReaderºÍscannerµÄÇø±ğ
+ * 100ï¿½ï¿½
+ * ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½BufferedReaderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Scannerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ğ°Ù¶ï¿½BufferedReaderï¿½ï¿½scannerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
-public class Ğ¡¼ÆËãÆ÷ {
-    static String op = "";             //ÔËËã·û
-    static int hex = 10;               //½øÖÆÊı
-    static long num [] =new long[2];
-    public static void main(String[] args) throws IOException{
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(bufferedReader.readLine());
-        for (int i = 0; i < n; i++) {
-            String []str  = bufferedReader.readLine().split(" ");
-            operate(str);
+public class Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+static String op="";             //ï¿½ï¿½ï¿½ï¿½ï¿½
+static int hex=10;               //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+static long num[]=new long[2];
+public static void main(String[]args)throws IOException{
+        BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(System.in));
+        int n=Integer.parseInt(bufferedReader.readLine());
+        for(int i=0;i<n; i++){
+        String[]str=bufferedReader.readLine().split(" ");
+        operate(str);
         }
-    }
+        }
 
 //BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-    public static void operate(String str []){
-        switch (str[0]){
-            case "NUM":
-                if(op.equals("")){
-                    num[0] = Long.valueOf(str[1],hex);
-                   // System.out.println(num[0]);
-                }else{
-                    num[1] = Long.valueOf(str[1],hex);
-                    num[0] = calculator();
-                    op="";
-                }
-                break;
-            case "ADD":
-                op = "ADD";
-                break;
-            case "SUB":
-                op= "SUB";
-                break;
-            case "MUL":
-                op="MUL";
-                break;
-            case "DIV":
-                op = "DIV";
-                break;
-            case "MOD":
-                op = "MOD";
-                break;
-            case "EQUAL":
-                print();
-                break;
-            case "CLEAR":
-                num[0]=0;
-                num[1]=0;
-                op="";
-                break;
-            case "CHANGE":
-                hex = Integer.parseInt(str[1]);
-                break;
-            default :
-                break;
+public static void operate(String str[]){
+        switch(str[0]){
+        case"NUM":
+        if(op.equals("")){
+        num[0]=Long.valueOf(str[1],hex);
+        // System.out.println(num[0]);
+        }else{
+        num[1]=Long.valueOf(str[1],hex);
+        num[0]=calculator();
+        op="";
         }
-    }
+        break;
+        case"ADD":
+        op="ADD";
+        break;
+        case"SUB":
+        op="SUB";
+        break;
+        case"MUL":
+        op="MUL";
+        break;
+        case"DIV":
+        op="DIV";
+        break;
+        case"MOD":
+        op="MOD";
+        break;
+        case"EQUAL":
+        print();
+        break;
+        case"CLEAR":
+        num[0]=0;
+        num[1]=0;
+        op="";
+        break;
+        case"CHANGE":
+        hex=Integer.parseInt(str[1]);
+        break;
+default :
+        break;
+        }
+        }
 
-    //Êä³ö
-    public static void print(){
+//ï¿½ï¿½ï¿½
+public static void print(){
         System.out.println(Long.toString(num[0],hex).toUpperCase());
-    }
-    //¼ÆËãÆ÷
-    public static Long calculator(){
-        long res=0;
-        switch (op){
-            case "ADD":
-                res=num[0]+num[1];
-                break;
-            case "SUB":
-                res = num[0]-num[1];
-                break;
-            case "MUL":
-                res = num[0]*num[1];
-                break;
-            case "DIV":
-                res = num[0]/num[1];
-                break;
-            case "MOD":
-                res = num[0]%num[1];
-                break;
-            default :
-                break;
         }
-        return  res;
-    }
-}
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+public static Long calculator(){
+        long res=0;
+        switch(op){
+        case"ADD":
+        res=num[0]+num[1];
+        break;
+        case"SUB":
+        res=num[0]-num[1];
+        break;
+        case"MUL":
+        res=num[0]*num[1];
+        break;
+        case"DIV":
+        res=num[0]/num[1];
+        break;
+        case"MOD":
+        res=num[0]%num[1];
+        break;
+default :
+        break;
+        }
+        return res;
+        }
+        }

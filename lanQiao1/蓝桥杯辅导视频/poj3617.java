@@ -1,4 +1,6 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 
 import java.util.Scanner;
@@ -20,20 +22,20 @@ public class poj3617 {
         }
         c = sb.toString().toCharArray();
         int left = 0;
-        int right = n-1;
-        while (left<right){
-            if (c[left]<c[right]){
+        int right = n - 1;
+        while (left < right) {
+            if (c[left] < c[right]) {
                 s += c[left];
                 left++;
-            }else if (c[left]==c[right]){
+            } else if (c[left] == c[right]) {
                 int a = 1;
-                while (left+a <= right-a){
-                    if (c[left+a]!=c[right-a]){
-                        if (c[left+a]>c[right-a]){
+                while (left + a <= right - a) {
+                    if (c[left + a] != c[right - a]) {
+                        if (c[left + a] > c[right - a]) {
                             s += c[right];
                             right--;
                             break;
-                        }else{
+                        } else {
                             s += c[left];
                             left++;
                             break;
@@ -41,7 +43,7 @@ public class poj3617 {
                     }
                     a++;
                 }
-            }else{
+            } else {
                 s += c[right];
                 right--;
             }

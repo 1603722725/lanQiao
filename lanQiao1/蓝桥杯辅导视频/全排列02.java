@@ -1,34 +1,37 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 import java.util.ArrayList;
 import java.util.Arrays;
+
 /**
  * @author wl
  * @Data 2020-04-17 14:41
  */
-public class È«ÅÅÁÐ02 {
-    static ArrayList<String> res = new ArrayList<>();
-    public static void main(String[] args){
-        String str = "1423";
-        char[] c = str.toCharArray();
+public class È«ï¿½ï¿½ï¿½ï¿½02{
+static ArrayList<String> res=new ArrayList<>();
+public static void main(String[]args){
+        String str="1423";
+        char[]c=str.toCharArray();
         Arrays.sort(c);
         getPermutation(c,0);
         System.out.println(res.size());
         System.out.println(res);
-    }
-    public static void getPermutation(char[] arr,int k){
-        if (k == arr.length){
-            res.add(new String(arr));
         }
-        for (int i = k; i < arr.length; i++) {
-            swap(arr,k,i);
-            getPermutation(arr,k+1);
-            swap(arr,k,i);        //»ØËÝ
+public static void getPermutation(char[]arr,int k){
+        if(k==arr.length){
+        res.add(new String(arr));
         }
-    }
-    static void swap(char[] arr,int i,int j){
-        char temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
+        for(int i=k;i<arr.length;i++){
+        swap(arr,k,i);
+        getPermutation(arr,k+1);
+        swap(arr,k,i);        //ï¿½ï¿½ï¿½ï¿½
+        }
+        }
+static void swap(char[]arr,int i,int j){
+        char temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+        }
 
-}
+        }

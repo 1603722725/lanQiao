@@ -5,7 +5,6 @@ import sun.text.resources.cldr.or.FormatData_or;
 import javax.print.attribute.SetOfIntegerSyntax;
 import java.nio.channels.NonReadableChannelException;
 import java.util.*;
-
 /**
  * @author wl
  * @Data 2020-02-27 14:40
@@ -14,7 +13,6 @@ import java.util.*;
 public class Demo01 {
     public static void main(String[] args) {
         System.out.println(lengthOfLongestSubstring("bbbacb"));
-
     }
 
     public static boolean containsDuplicate(int[] nums) {
@@ -174,10 +172,10 @@ public class Demo01 {
         int[][] row = new int[10][9];
         int[][] col = new int[10][9];
         int[][] table = new int[10][9];
-        for(int i = 0; i < board.length; i++){
-            for (int j = 0; j < board[0].length; j++){
-                int num = board[i][j]-'0';
-                if (board[i][j]!='.'&&(++row[num][i]>=2 || ++col[num][j]>=2 || ++table[num][i/3*3+j/3]>=2)){
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                int num = board[i][j] - '0';
+                if (board[i][j] != '.' && (++row[num][i] >= 2 || ++col[num][j] >= 2 || ++table[num][i / 3 * 3 + j / 3] >= 2)) {
                     return false;
                 }
             }
@@ -187,6 +185,7 @@ public class Demo01 {
 
     /**
      * 宝石与石头
+     *
      * @param J
      * @param S
      * @return
@@ -198,7 +197,7 @@ public class Demo01 {
         }
         int count = 0;
         for (int i = 0; i < S.length(); i++) {
-            if (set.contains(S.charAt(i))){
+            if (set.contains(S.charAt(i))) {
                 count++;
             }
         }
@@ -207,36 +206,38 @@ public class Demo01 {
 
     /**
      * 无重复字符的最长子串
+     *
      * @param s
      * @return
      */
-    public static int lengthOfLongestSubstring(String s){
+    public static int lengthOfLongestSubstring(String s) {
         HashSet<Character> hashset = new HashSet<>();
         char[] ss = s.toCharArray();
         int res = 0;
         int l = 0, r = -1;
-        while(l < ss.length){
+        while (l < ss.length) {
             res = Math.max(res, r - l + 1);
-            if( r + 1 < ss.length && !hashset.contains(ss[r+1])){
+            if (r + 1 < ss.length && !hashset.contains(ss[r + 1])) {
                 hashset.add(ss[++r]);
-            }else {
+            } else {
                 hashset.remove(ss[l++]);
             }
-         }
-         return res;
+        }
+        return res;
     }
+
     public static int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
-        HashMap<Integer, Integer> map = new HashMap<Integer,Integer>();
-        int len=A.length;
-        for(int a:A) {
-            for(int b:B) {
-                map.merge(a+b, 1, (v1,v2)->v1+1);
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int len = A.length;
+        for (int a : A) {
+            for (int b : B) {
+                map.merge(a + b, 1, (v1, v2) -> v1 + 1);
             }
         }
-        int res=0;
-        for(int c:C) {
-            for(int d:D) {
-                res+=map.getOrDefault(0-c-d, 0);
+        int res = 0;
+        for (int c : C) {
+            for (int d : D) {
+                res += map.getOrDefault(0 - c - d, 0);
             }
         }
         return res;

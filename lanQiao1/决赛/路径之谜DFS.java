@@ -1,68 +1,70 @@
-package ¾öÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½;
 import java.util.Arrays;
 import java.util.Scanner;
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/5/8 - 20:41
  * DFS
  */
-public class Â·¾¶Ö®ÃÕDFS {
-        static int N;
-        static int []north; // Õı±±·½°ĞÊı
-        static int []west;  // ÕıÎ÷·½°ĞÊı
-        static int[][]direction = {{0,-1},{0,1},{-1,0},{1,0}};//ÉÏÏÂ×óÓÒÒÆ¶¯·½Ïò
-        static int[][]mark; //ÓÃÀ´±ê¼ÇÊÇ·ñ¾­¹ıÄ³¿éÊ¯Í·£¬0ÎªÎ´¾­¹ı,1Îª¾­¹ı
-        static int x,y;//Ê¯Í·×ø±ê£¬Õı¶«·½ÏòÎªxÖáÕı·½Ïò£¬ÕıÄÏ·½ÏòÎªyÖáÕı·½Ïò
-        public static void main(String[] args){
-            Scanner console = new Scanner(System.in);
-            //µØÃæÓĞN*N¸ö·½¸ñ
-            N = console.nextInt();
-            //±±±ßÒÔ¼°Î÷±ß¼ı°ĞÉÏµÄÊı×Ö
-            north = new int[N];
-            west = new int[N];
-            mark = new int[N][N];
-            for(int i = 0; i < N; i++){
-                north[i] = console.nextInt();
-            }
-
-            for(int i = 0; i < N; i++){
-                west[i] = console.nextInt();
-            }
-            mark[0][0]=1;
-            dfs("0");
+public class Â·ï¿½ï¿½Ö®ï¿½ï¿½DFS{
+static int N;
+static int[]north; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+static int[]west;  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+static int[][]direction={{0,-1},{0,1},{-1,0},{1,0}};//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½
+static int[][]mark; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ñ¾­¹ï¿½Ä³ï¿½ï¿½Ê¯Í·ï¿½ï¿½0ÎªÎ´ï¿½ï¿½ï¿½ï¿½,1Îªï¿½ï¿½ï¿½ï¿½
+static int x,y;//Ê¯Í·ï¿½ï¿½ï¿½ê£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½Îªyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+public static void main(String[]args){
+        Scanner console=new Scanner(System.in);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½N*Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        N=console.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½
+        north=new int[N];
+        west=new int[N];
+        mark=new int[N][N];
+        for(int i=0;i<N; i++){
+        north[i]=console.nextInt();
         }
 
-        public static void dfs(String s){
-            if(x>=N-1 && y>=N-1){
-                int[] north_count = new int[N];
-                int[] west_count = new int[N];
-                for(int i = 0; i < N;i++){
-                    for(int j = 0; j < N; j++){
-                        north_count[i] += mark[i][j];//Ã¿ÁĞ°Ğ×ÓÉÏµÄ¼ıÊı
-                        west_count[i] += mark[j][i]; //Ã¿ĞĞ°Ğ×ÓÉÏµÄ¼ıÊı
-                    }
-                }
-                if(Arrays.equals(north, north_count) && Arrays.equals(west, west_count)){
-                    System.out.println(s);
-                    return;
-                }
-            }
-
-            //³¯ËÄ¸ö·½Ïò×ß
-            for(int i = 0; i < 4; i++){
-                x += direction[i][0];
-                y += direction[i][1];
-                int position;
-                position = x+N*y;       //Ê¯Í·±àºÅ
-                String str = s + " "+position;
-                if(x>=0 && y>=0 && x<N && y<N &&mark[x][y]==0){
-                    mark[x][y]=1;
-                    dfs(str);
-                    mark[x][y]=0;       //»ØËİ
-                }
-                x -= direction[i][0];
-                y-= direction[i][1];    //»ØËİ
-            }
+        for(int i=0;i<N; i++){
+        west[i]=console.nextInt();
+        }
+        mark[0][0]=1;
+        dfs("0");
         }
 
-}
+public static void dfs(String s){
+        if(x>=N-1&&y>=N-1){
+        int[]north_count=new int[N];
+        int[]west_count=new int[N];
+        for(int i=0;i<N;i++){
+        for(int j=0;j<N; j++){
+        north_count[i]+=mark[i][j];//Ã¿ï¿½Ğ°ï¿½ï¿½ï¿½ï¿½ÏµÄ¼ï¿½ï¿½ï¿½
+        west_count[i]+=mark[j][i]; //Ã¿ï¿½Ğ°ï¿½ï¿½ï¿½ï¿½ÏµÄ¼ï¿½ï¿½ï¿½
+        }
+        }
+        if(Arrays.equals(north,north_count)&&Arrays.equals(west,west_count)){
+        System.out.println(s);
+        return;
+        }
+        }
+
+        //ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for(int i=0;i< 4;i++){
+        x+=direction[i][0];
+        y+=direction[i][1];
+        int position;
+        position=x+N*y;       //Ê¯Í·ï¿½ï¿½ï¿½
+        String str=s+" "+position;
+        if(x>=0&&y>=0&&x<N &&y<N &&mark[x][y]==0){
+        mark[x][y]=1;
+        dfs(str);
+        mark[x][y]=0;       //ï¿½ï¿½ï¿½ï¿½
+        }
+        x-=direction[i][0];
+        y-=direction[i][1];    //ï¿½ï¿½ï¿½ï¿½
+        }
+        }
+
+        }

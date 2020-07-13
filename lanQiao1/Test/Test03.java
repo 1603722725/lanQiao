@@ -1,50 +1,51 @@
 package Test;
-//ÕÒ±ß½çÎ»1µÄ×î´ó×Ó·½Õó
+
+//ï¿½Ò±ß½ï¿½Î»1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó·ï¿½ï¿½ï¿½
 public class Test03 {
-	public static void main(String[] args) {
-		int [][]a={ {1,1,1,1,1},
-					{1,0,1,0,1},
-					{1,1,0,0,0},
-					{1,0,1,0,1},
-					{1,1,1,1,1}};
-		System.out.println(f(a));
-	}
-	
-	public static int f(int[][]arr){
-		int N=arr.length;
-		int n=N;
-		int a=0;
-		while(n>0){
-			for(int i = 0; i < N; i++){
-				if(i+n>N) break;
-			l3:
-				for(int j=0;j<N;j++){
-					if(j+n>N) break;
-					int r=i,c=j;
-					//ÉÏ
-					while(c<j+n){
-						if(arr[r][c++]==0) continue l3;
-					}
-					c--;
-					//ÓÒ
-					while(r<i+n){
-						if(arr[r++][c]==0) continue l3;
-					}
-					r--;
-					while(c>=j){
-						if(arr[r][c--]==0) continue l3;
-					}
-					c++;
-					while(r>=i){
-						if(arr[r--][c]==0) continue l3;
-					}
-					r++;
-					a = n;
-				}
-			}
-			if(a>0) break;
-			n--;
-		}
-		return a;
-	}
+    public static void main(String[] args) {
+        int[][] a = {{1, 1, 1, 1, 1},
+                {1, 0, 1, 0, 1},
+                {1, 1, 0, 0, 0},
+                {1, 0, 1, 0, 1},
+                {1, 1, 1, 1, 1}};
+        System.out.println(f(a));
+    }
+
+    public static int f(int[][] arr) {
+        int N = arr.length;
+        int n = N;
+        int a = 0;
+        while (n > 0) {
+            for (int i = 0; i < N; i++) {
+                if (i + n > N) break;
+                l3:
+                for (int j = 0; j < N; j++) {
+                    if (j + n > N) break;
+                    int r = i, c = j;
+                    //ï¿½ï¿½
+                    while (c < j + n) {
+                        if (arr[r][c++] == 0) continue l3;
+                    }
+                    c--;
+                    //ï¿½ï¿½
+                    while (r < i + n) {
+                        if (arr[r++][c] == 0) continue l3;
+                    }
+                    r--;
+                    while (c >= j) {
+                        if (arr[r][c--] == 0) continue l3;
+                    }
+                    c++;
+                    while (r >= i) {
+                        if (arr[r--][c] == 0) continue l3;
+                    }
+                    r++;
+                    a = n;
+                }
+            }
+            if (a > 0) break;
+            n--;
+        }
+        return a;
+    }
 }

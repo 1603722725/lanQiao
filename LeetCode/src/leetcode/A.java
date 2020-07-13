@@ -1,27 +1,28 @@
 package leetcode;
 
-import java.util.Arrays;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author wl
  * @Data 2020-02-26 20:40
  */
 public class A {
-    public static void main(String[] args) {
-        int[] three = new int[12];
-        ///digit[60000][13]
-        int[][] digit = new int[60000][13];
-        three[0] = 1;
-        for(int i=1; i<11; i++) three[i] = three[i-1]*3;
-        for(int i=0; i<three[10]; i++){
-            int tmp = i;
-            for(int j=0; j<10; j++){
-                digit[i][j] = tmp%3;
-                tmp /= 3;
+    public static void main(String args[]) {
+        Map<String, String> map = new HashMap<>((int) Math.pow(2, 30) - 1);
+        map.put("1", "12");
+        System.out.println(map);
+    }
+
+    public boolean canMakeArithmeticProgression(int[] arr) {
+        Arrays.sort(arr);
+        int a = arr[1] - arr[0];
+        for (int i = 2; i < arr.length; i++) {
+            if (a != arr[i] - arr[i - 1]) {
+                return false;
             }
         }
-        System.out.println(Arrays.toString(three));
-        System.out.println("===========");
-        System.out.println(Arrays.toString(digit));
+        return true;
     }
 }

@@ -1,4 +1,6 @@
-package ю╤ге╠╜╦╗╣╪йсф╣;
+package
+
+О©╫О©╫О©╫е╠О©╫О©╫О©╫О©╫О©╫О©╫О©╫ф╣;
 
 import java.util.Arrays;
 
@@ -7,48 +9,51 @@ import java.util.Arrays;
  * @Data 2020-01-19 8:26
  */
 public class MergeSort {
-    //╧И╡╒еепР
-    /*╧И╡╒еепР╡исц╣щ╧Ий╣ож
-     * ╥ж╫в╤н©иртюМ╫Бн╙╬мйг╣щ╧И╡П╥жвспРап╣д╧ЩЁл║╒
-     * жн╫в╤нё╛нрцгпХр╙╫╚а╫╦Жря╬╜сппР╣двспРап╨о╡╒Ёир╩╦ЖсппРпРапё╛╠ххГиом╪жп╣двН╨Ср╩╢н╨о╡╒ё╛р╙╫╚[4,5,7,8]╨м[1,2,3,6]а╫╦Жря╬╜сппР╣двспРапё╛╨о╡╒н╙вНжупРап[1,2,3,4,5,6,7,8]ё╛
+    //О©╫И╡╒О©╫О©╫О©╫О©╫
+    /*О©╫И╡╒О©╫О©╫О©╫О©╫О©╫О©╫ц╣щ╧О©╫й╣О©╫О©╫
+     * О©╫ж╫в╤н©О©╫О©╫О©╫О©╫О©╫О©╫н╙О©╫О©╫О©╫г╣щ╧О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫п╣д╧О©╫О©╫л║О©╫
+     * О©╫н╫в╤нёО©╫О©╫О©╫О©╫О©╫О©╫О©╫р╙О©╫О©╫О©╫О©╫О©╫О©╫О©╫я╬О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫п╨о╡О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫пёО©╫О©╫О©╫О©╫О©╫О©╫О©╫м╪О©╫п╣О©╫О©╫О©╫О©╫р╩О©╫н╨о╡О©╫О©╫О©╫р╙О©╫О©╫[4,5,7,8]О©╫О©╫[1,2,3,6]О©╫О©╫О©╫О©╫О©╫я╬О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫пёО©╫О©╫о╡О©╫н╙О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫[1,2,3,4,5,6,7,8]О©╫О©╫
      * */
-    public static void main(String []args){
-        int []arr = {9,8,7,6,5,4,3,2,1};
+    public static void main(String[] args) {
+        int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
-    public static void sort(int []arr){
-        int []temp = new int[arr.length];//тзеепРг╟ё╛ох╫╗╨цр╩╦ЖЁ╓╤х╣хсзт╜йЩвИЁ╓╤х╣даый╠йЩвИё╛╠эцБ╣щ╧Ижпф╣╥╠©╙╠ы©у╪Д
-        sort(arr,0,arr.length-1,temp);
+
+    public static void sort(int[] arr) {
+        int[] temp = new int[arr.length];//О©╫О©╫О©╫О©╫О©╫О©╫г╟О©╫О©╫О©╫х╫О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫х╣О©╫О©╫О©╫т╜О©╫О©╫О©╫ИЁ╓О©╫х╣О©╫О©╫О©╫й╠О©╫О©╫О©╫Иё╛О©╫О©╫О©╫О©╫щ╧О©╫О©╫О©╫ф╣О©╫О©╫О©╫О©╫О©╫ы©у╪О©╫
+        sort(arr, 0, arr.length - 1, temp);
     }
-    private static void sort(int[] arr,int left,int right,int []temp){
-        if(left<right){
-            int mid = (left+right)/2;
-            sort(arr,left,mid,temp);         //вС╠ъ╧И╡╒еепРё╛й╧╣цвСвспРапсппР
-            sort(arr,mid+1,right,temp); //ср╠ъ╧И╡╒еепРё╛й╧╣цсрвспРапсппР
-            merge(arr,left,mid,right,temp); //╫╚а╫╦ЖсппРвсйЩвИ╨о╡╒╡ывВ
+
+    private static void sort(int[] arr, int left, int right, int[] temp) {
+        if (left < right) {
+            int mid = (left + right) / 2;
+            sort(arr, left, mid, temp);         //О©╫О©╫ъ╧И╡╒О©╫О©╫О©╫О©╫й╧О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+            sort(arr, mid + 1, right, temp); //О©╫р╠ъ╧И╡╒О©╫О©╫О©╫О©╫й╧О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+            merge(arr, left, mid, right, temp); //О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫о╡О©╫О©╫О©╫О©╫О©╫
         }
     }
-    private static void merge(int[] arr,int left,int mid,int right,int[] temp){
-        int i = left;//вСпРапж╦уК
-        int j = mid+1;//српРапж╦уК
-        int t = 0;//аый╠йЩвИж╦уК
-        while (i<=mid && j<=right){
-            if(arr[i]<=arr[j]){
+
+    private static void merge(int[] arr, int left, int mid, int right, int[] temp) {
+        int i = left;//О©╫О©╫О©╫О©╫О©╫О©╫ж╦О©╫О©╫
+        int j = mid + 1;//О©╫О©╫О©╫О©╫О©╫О©╫ж╦О©╫О©╫
+        int t = 0;//О©╫О©╫й╠О©╫О©╫О©╫О©╫ж╦О©╫О©╫
+        while (i <= mid && j <= right) {
+            if (arr[i] <= arr[j]) {
                 temp[t++] = arr[i++];
-            }else {
+            } else {
                 temp[t++] = arr[j++];
             }
         }
-        while(i<=mid){//╫╚вС╠ъйёсЮт╙кьлНЁД╫Ьtempжп
+        while (i <= mid) {//О©╫О©╫О©╫О©╫О©╫йёО©╫О©╫т╙О©╫О©╫О©╫О©╫О©╫О©╫tempО©╫О©╫
             temp[t++] = arr[i++];
         }
-        while(j<=right){//╫╚српРапйёсЮт╙кьлНЁД╫Ьtempжп
+        while (j <= right) {//О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫йёО©╫О©╫т╙О©╫О©╫О©╫О©╫О©╫О©╫tempО©╫О©╫
             temp[t++] = arr[j++];
         }
         t = 0;
-        //╫╚tempжп╣дт╙кьх╚╡©©╫╠╢╣╫т╜йЩвИжп
-        while(left <= right){
+        //О©╫О©╫tempО©╫п╣О©╫т╙О©╫О©╫х╚О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫т╜О©╫О©╫О©╫О©╫О©╫О©╫
+        while (left <= right) {
             arr[left++] = temp[t++];
         }
     }

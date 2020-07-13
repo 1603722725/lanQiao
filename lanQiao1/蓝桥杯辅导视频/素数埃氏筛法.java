@@ -1,47 +1,48 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
  * @author wl
  * @Data 2020-03-11 9:06
  */
-public class ËØÊý°£ÊÏÉ¸·¨ {
-    public static void main(String[] args) {
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¸ï¿½ï¿½ {
+public static void main(String[]args){
         solo(100000);
-    }
+        }
 
-    /**
-     * °£ÊÏÉ¸·¨ ºÄÊ± ÊÇÆÕÍ¨·½·¨µÄ1/10
-     * ÇóµÚN¸öËØÊý
-     * @param N
-     */
-    static void solo(int N){
-        int n = 2;
-        while (n/Math.log(n) < N){
-            n++;
+/**
+ * ï¿½ï¿½ï¿½ï¿½É¸ï¿½ï¿½ ï¿½ï¿½Ê± ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1/10
+ * ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * @param N
+ */
+static void solo(int N){
+        int n=2;
+        while(n/Math.log(n)<N){
+        n++;
         }
-        int[] arr = new int[n];
-        int x = 2;
-        while (x<n){
-            if (arr[x]!=0){
-                x++;
-                continue;
-            }
-            int k=2;
-            while (k*x<n){
-                arr[k*x]=-1;
-                k++;
-            }
-            x++;
+        int[]arr=new int[n];
+        int x=2;
+        while(x<n){
+        if(arr[x]!=0){
+        x++;
+        continue;
         }
-        int sum = 0;
-        for (int i = 2; i < n; i++){
-            if (arr[i]==0){
-                sum++;
-            }
-            if (sum==N){
-                System.out.println(i);
-                return;
-            }
+        int k=2;
+        while(k*x<n){
+        arr[k*x]=-1;
+        k++;
         }
-    }
-}
+        x++;
+        }
+        int sum=0;
+        for(int i=2;i<n; i++){
+        if(arr[i]==0){
+        sum++;
+        }
+        if(sum==N){
+        System.out.println(i);
+        return;
+        }
+        }
+        }
+        }

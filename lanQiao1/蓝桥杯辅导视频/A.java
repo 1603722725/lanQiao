@@ -1,4 +1,4 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
  * @author wl
@@ -8,8 +8,8 @@ public class A {
     public static void main(String[] args) {
         double a = 0.5;
         double b = 0.1;
-        int c= (int)(a-b);
-        System.out.println(a-b);
+        int c = (int) (a - b);
+        System.out.println(a - b);
         System.out.println(c);
     }
 }

@@ -1,36 +1,40 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
+
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/23 - 13:44
- * ×Ö·û´®Æ¥Åä£¬ÒÔ²¡¶¾¸ÐÈ¾¼ì²âÎªÀý
+ * ï¿½Ö·ï¿½ï¿½ï¿½Æ¥ï¿½ä£¬ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½È¾ï¿½ï¿½ï¿½Îªï¿½ï¿½
  */
 public class BFAndKMP {
     public static int BF(String str1, String str2) {
         int len1 = str1.length();
         int len2 = str2.length();
-        int i=0,j=0;
-        while (i<len1 && j<len2){
-            if(str1.charAt(i)==str2.charAt(j)){
-                i++; j++;
-            }else{
-                i=i-j+1;  j=0;
+        int i = 0, j = 0;
+        while (i < len1 && j < len2) {
+            if (str1.charAt(i) == str2.charAt(j)) {
+                i++;
+                j++;
+            } else {
+                i = i - j + 1;
+                j = 0;
             }
         }
-        if(j == len2)
-            return i-j;
+        if (j == len2)
+            return i - j;
         else return -1;
     }
-//KMP       ÇónextÊý×é   KMPÆ¥Åä
-public  static int []getNext(String str){
-        char p[]=str.toCharArray();
+
+    //KMP       ï¿½ï¿½nextï¿½ï¿½ï¿½ï¿½   KMPÆ¥ï¿½ï¿½
+    public static int[] getNext(String str) {
+        char p[] = str.toCharArray();
         int len = str.length();
         int next[] = new int[len];
-        next[0]=-1;
-        int k=-1;
-        int j=0;
-        while (j < len - 1){
-            //p[k]±íÊ¾Ç°×º£¬p[j]±íÊ¾ºó×º
-            if (k == -1 || p[j] == p[k]){
+        next[0] = -1;
+        int k = -1;
+        int j = 0;
+        while (j < len - 1) {
+            //p[k]ï¿½ï¿½Ê¾Ç°×ºï¿½ï¿½p[j]ï¿½ï¿½Ê¾ï¿½ï¿½×º
+            if (k == -1 || p[j] == p[k]) {
                 ++k;
                 ++j;
                 next[j] = k;
@@ -38,11 +42,12 @@ public  static int []getNext(String str){
                 k = next[k];
             }
         }
-    return next;
-}
+        return next;
+    }
+
     public static void main(String[] args) {
-        int flag=BF("asdfgh","asdf");
-        if(flag>=0)
+        int flag = BF("asdfgh", "asdf");
+        if (flag >= 0)
             System.out.println("Yes");
         else
             System.out.println("No");

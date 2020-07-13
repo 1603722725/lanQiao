@@ -1,31 +1,31 @@
-package ¾öÈü;
+package ï¿½ï¿½ï¿½ï¿½;
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/5/7 - 11:51
  */
-public class ´ò°Ğ{
-    static void f(int[] ta, int[] da, int k, int ho, int bu, int sc){
-        if(ho<0 || bu<0 || sc<0) return;
+public class ï¿½ï¿½ï¿½{
+static void f(int[]ta,int[]da,int k,int ho,int bu,int sc){
+        if(ho<0||bu<0||sc<0)return;
         if(k==ta.length){
-            if(ho>0 || bu>0 || sc>0) return;
-            for(int i=0; i<da.length; i++){
-                for(int j=0; j<da[i]; j++)
-                    System.out.print(ta[i] + " ");
-            }
-            System.out.println();
-            return;
+        if(ho>0||bu>0||sc>0)return;
+        for(int i=0;i<da.length;i++){
+        for(int j=0;j<da[i];j++)
+        System.out.print(ta[i]+" ");
+        }
+        System.out.println();
+        return;
         }
 
-        for(int i=0; i<=bu; i++){
-            da[k] = i;
-            //f(ta, da, k+1,  _______________ , bu-i, sc-ta[k]*i);   // Ìî¿ÕÎ»ÖÃ
-            f(ta, da, k+1,ho - (i == 0 ? 0 : 1), bu-i, sc-ta[k]*i);
+        for(int i=0;i<=bu;i++){
+        da[k]=i;
+        //f(ta, da, k+1,  _______________ , bu-i, sc-ta[k]*i);   // ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+        f(ta,da,k+1,ho-(i==0?0:1),bu-i,sc-ta[k]*i);
         }
-        da[k] = 0;
-    }
-        public static void main(String[] args){
-        int[] ta = {1,2,3,5,10,20,25,50};
-        int[] da = new int[8];
-        f(ta, da, 0, 3, 6, 96);
-    }
-}
+        da[k]=0;
+        }
+public static void main(String[]args){
+        int[]ta={1,2,3,5,10,20,25,50};
+        int[]da=new int[8];
+        f(ta,da,0,3,6,96);
+        }
+        }

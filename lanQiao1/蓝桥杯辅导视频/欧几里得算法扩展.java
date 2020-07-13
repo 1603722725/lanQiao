@@ -1,38 +1,38 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
  * @author wl
  * @Data 2020-03-10 21:35
  */
-public class Å·¼¸ÀïµÃËã·¨À©Õ¹ {
-    static long x;
-    static long y;
-    public static void main(String[] args) throws Exception {
-        long res = solve(12,42,6);
+public class Å·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½Õ¹{
+static long x;
+static long y;
+public static void main(String[]args)throws Exception{
+        long res=solve(12,42,6);
         System.out.println(x+"   "+y);
         System.out.println(res);
-    }
-    /*
-    * ax+by=d  µÄ½â
-    * */
-    static long gcd(long a,long b){
-        if (b==0){
-            x=1;
-            y=0;
-            return a;
         }
-        long res = gcd(b,a%b);
-        long x1 = x;
+/*
+ * ax+by=d  ï¿½Ä½ï¿½
+ * */
+static long gcd(long a,long b){
+        if(b==0){
+        x=1;
+        y=0;
+        return a;
+        }
+        long res=gcd(b,a%b);
+        long x1=x;
         x=y;
-        y=x1 - a/b*y;
+        y=x1-a/b*y;
         return res;
-    }
-    static long solve(long a,long b,long m) throws Exception{
-        long d = gcd(a,b);
-        if (m%d!=0) throw new Exception("ÎÞ½â");
-        long n = m/d;
+        }
+static long solve(long a,long b,long m)throws Exception{
+        long d=gcd(a,b);
+        if(m%d!=0)throw new Exception("ï¿½Þ½ï¿½");
+        long n=m/d;
         x*=n;
         y*=n;
         return d;
-    }
-}
+        }
+        }

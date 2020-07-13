@@ -1,29 +1,31 @@
 package Test;
+
 public class Test05 {
-//±à³Ì·µ»Ø×ÓÊý×é×î´óÀÛ¼ÓºÍ
-	public static void main(String[] args) {
-		int a[]={1,-2,3,-1,5,-2,6,-1};
-		System.out.println(findMax(a));
-	}
-	//µÝÍÆ·¨O(n)
-	public static int findMax(int arr[]){
-		int sum = arr[0];
-		int max = sum;
-		int left,right;
-		for (int i = 1; i < arr.length; i++) {
-			if(sum>0){
-				sum+=arr[i];
-			}else{
-				sum = arr[i];
-				left = i;//×óÏÂ±ê
-			}
-			if(sum>max){
-				max=sum;
-				right=i;//ÓÒÏÂ±ê
-			}
-		}
-		return max;
-		
-	}
+    //ï¿½ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û¼Óºï¿½
+    public static void main(String[] args) {
+        int a[] = {1, -2, 3, -1, 5, -2, 6, -1};
+        System.out.println(findMax(a));
+    }
+
+    //ï¿½ï¿½ï¿½Æ·ï¿½O(n)
+    public static int findMax(int arr[]) {
+        int sum = arr[0];
+        int max = sum;
+        int left, right;
+        for (int i = 1; i < arr.length; i++) {
+            if (sum > 0) {
+                sum += arr[i];
+            } else {
+                sum = arr[i];
+                left = i;//ï¿½ï¿½ï¿½Â±ï¿½
+            }
+            if (sum > max) {
+                max = sum;
+                right = i;//ï¿½ï¿½ï¿½Â±ï¿½
+            }
+        }
+        return max;
+
+    }
 
 }

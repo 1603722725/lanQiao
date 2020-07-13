@@ -1,23 +1,23 @@
-package ¾öÈü;
+package ï¿½ï¿½ï¿½ï¿½;
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/5/6 - 11:20
  */
-public class ·ßÅ­µÄÐ¡Äñ {
-    static int count;
-    static void ff(double k){
+public class ï¿½ï¿½Å­ï¿½ï¿½Ð¡ï¿½ï¿½ {
+static int count;
+static void ff(double k){
         while(k>1){
-            count++;
-            k = k*2/3;
+        count++;
+        k=k*2/3;
         }
-    }
-    public static void main(String[] args) {
-                ff(1000);
-                if(count%2==0){
-                    System.out.println(count/2);
-                }
-                else{
-                    System.out.println(count/2+1);
-                }
-    }
-}
+        }
+public static void main(String[]args){
+        ff(1000);
+        if(count%2==0){
+        System.out.println(count/2);
+        }
+        else{
+        System.out.println(count/2+1);
+        }
+        }
+        }

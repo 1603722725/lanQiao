@@ -1,7 +1,7 @@
-package юЗ╫ЛйтлБ;
+package О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫;
 
-public class ющВ╩вс {
-	public static void main(String[] args) {
+public class О©╫О©╫О©╫О©╫О©╫О©╫ {
+public static void main(String[]args){
 
-	}
-}
+        }
+        }

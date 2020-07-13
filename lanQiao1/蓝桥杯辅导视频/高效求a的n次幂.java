@@ -1,24 +1,24 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/26 - 16:51
  */
-public class ¸ßÐ§ÇóaµÄn´ÎÃÝ {
-    public static int pow(int a,int n){
-        if (n==0) return 1;
+public class ï¿½ï¿½Ð§ï¿½ï¿½aï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ {
+public static int pow(int a,int n){
+        if(n==0)return 1;
         int res=a;
-        int ex = 1;
+        int ex=1;
         while((ex<<1)<=n){
-            res=res*res;
-            ex=ex<<1;
+        res=res*res;
+        ex=ex<<1;
         }
         return res*pow(a,n-ex);
-    }
+        }
 
-    public static void main(String[] args) {
+public static void main(String[]args){
         int n=pow(2,10);
         System.out.println(n);
         System.out.println(pow(2,11));
-    }
-}
+        }
+        }

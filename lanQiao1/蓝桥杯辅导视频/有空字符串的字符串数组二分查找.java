@@ -1,35 +1,37 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 import java.util.Arrays;
 
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/26 - 15:12
  */
-public class ÓÐ¿Õ×Ö·û´®µÄ×Ö·û´®Êý×é¶þ·Ö²éÕÒ {
-    public static int indexOf(String arr[],String p){
-        int begin = 0;
-        int end = arr.length-1;
-        while (begin <= end){
-            int indexOfMid = begin+((end-begin)>>1);
-            while (arr[indexOfMid].equals("")){
-                indexOfMid++;
-                if(indexOfMid>end)
-                    return -1;
-            }
-           if(arr[indexOfMid].compareTo(p)>0)
-               end = indexOfMid-1;
-           else if(arr[indexOfMid].compareTo(p)<0)
-               begin = indexOfMid+1;
-           else return indexOfMid;
+public class ï¿½Ð¿ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ {
+public static int indexOf(String arr[],String p){
+        int begin=0;
+        int end=arr.length-1;
+        while(begin<=end){
+        int indexOfMid=begin+((end-begin)>>1);
+        while(arr[indexOfMid].equals("")){
+        indexOfMid++;
+        if(indexOfMid>end)
+        return-1;
         }
-        return -1;
-    }
-    public static void main(String[] args) {
-        String arr[] = {"d","s","","f","","dsfgfc"};
+        if(arr[indexOfMid].compareTo(p)>0)
+        end=indexOfMid-1;
+        else if(arr[indexOfMid].compareTo(p)<0)
+        begin=indexOfMid+1;
+        else return indexOfMid;
+        }
+        return-1;
+        }
+public static void main(String[]args){
+        String arr[]={"d","s","","f","","dsfgfc"};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
         int index=indexOf(arr,"f");
         System.out.println(index);
-    }
-}
+        }
+        }

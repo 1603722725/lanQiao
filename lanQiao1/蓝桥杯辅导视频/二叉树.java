@@ -1,39 +1,39 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/26 - 17:34
  */
-public class ¶þ²æÊ÷ {
-    //ÏÈÐò±éÀú ¸ù×óÓÒ
-    public static void preOrder(int arr[],int index){
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+public static void preOrder(int arr[],int index){
         if(index>=arr.length)
-            return;
-        System.out.print(arr[index]+" "); //¸ù½Úµã
-        preOrder(arr,2*index+1);    //×ó×ÓÊ÷
-        preOrder(arr,2*index+2);    //ÓÒ×ÓÊ÷
-    }
-    //ÖÐÐò±éÀú ×ó¸ùÓÒ
-    public static void inOrder(int arr[],int index){
+        return;
+        System.out.print(arr[index]+" "); //ï¿½ï¿½ï¿½Úµï¿½
+        preOrder(arr,2*index+1);    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        preOrder(arr,2*index+2);    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        }
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+public static void inOrder(int arr[],int index){
         if(index>=arr.length)
-            return;
+        return;
         inOrder(arr,2*index+1);
         System.out.print(arr[index]+" ");
         inOrder(arr,2*index+2);
-    }
-    //ºóÐò±éÀú ×óÓÒ¸ù
-    public static void postOrder(int arr[],int index){
+        }
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò¸ï¿½
+public static void postOrder(int arr[],int index){
         if(index>=arr.length)
-            return;
+        return;
         postOrder(arr,2*index+1);
         postOrder(arr,2*index+2);
         System.out.print(arr[index]+" ");
-    }
-    public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        }
+public static void main(String[]args){
+        int arr[]={1,2,3,4,5,6,7,8,9,10};
         preOrder(arr,0);
         System.out.println();
         inOrder(arr,0);
         System.out.println();
         postOrder(arr,0);
-    }
-}
+        }
+        }

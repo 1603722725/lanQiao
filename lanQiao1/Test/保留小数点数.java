@@ -4,19 +4,19 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/7 - 10:26
  */
-public class ±£ÁôÐ¡ÊýµãÊý {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+public class ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
         double a=3.1415926;
-        //·½·¨Ò»
+        //ï¿½ï¿½ï¿½ï¿½Ò»
         System.out.println(String.format("%.2f",a));
-        //·½·¨¶þ
-        DecimalFormat df = new DecimalFormat("#.000");
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        DecimalFormat df=new DecimalFormat("#.000");
         System.out.println(df.format(a));
-        //·½·¨Èý
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         System.out.printf("%.4f",a);
-    }
-}
+        }
+        }

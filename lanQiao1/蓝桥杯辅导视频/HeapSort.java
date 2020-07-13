@@ -1,9 +1,9 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
  * @author wl
  * @Data 2020-01-20 7:35
  */
-public class HeapSort{
+public class HeapSort {
 
 }

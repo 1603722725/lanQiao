@@ -1,85 +1,84 @@
-package ¾öÈü;
+package ï¿½ï¿½ï¿½ï¿½;
+
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/3 - 20:53
  */
-class BiTree
-{
+class BiTree {
     private int v;
     private BiTree l;
     private BiTree r;
 
-    public BiTree(int v){
+    public BiTree(int v) {
         this.v = v;
     }
 
-    public void add(BiTree the){
-        if(the.v < v){
-            if(l==null) l = the;
+    public void add(BiTree the) {
+        if (the.v < v) {
+            if (l == null) l = the;
             else l.add(the);
-        }
-        else{
-            if(r==null) r = the;
+        } else {
+            if (r == null) r = the;
             else r.add(the);
         }
     }
 
-    public int getHeight(){
+    public int getHeight() {
         int h = 2;
-        int hl = l==null? 0 : l.getHeight();
-        int hr = r==null? 0 : r.getHeight();
-        return h + Math.max(hl,hr);
+        int hl = l == null ? 0 : l.getHeight();
+        int hr = r == null ? 0 : r.getHeight();
+        return h + Math.max(hl, hr);
     }
 
-    public int getWidth(){
-        int w = (""+v).length();
-        if(l!=null) w += l.getWidth();
-        if(r!=null) w += r.getWidth();
+    public int getWidth() {
+        int w = ("" + v).length();
+        if (l != null) w += l.getWidth();
+        if (r != null) w += r.getWidth();
         return w;
     }
 
-    public void show(){
+    public void show() {
         char[][] buf = new char[getHeight()][getWidth()];
         printInBuf(buf, 0, 0);
         showBuf(buf);
     }
 
-    private void showBuf(char[][] x){
-        for(int i=0; i<x.length; i++){
-            for(int j=0; j<x[i].length; j++)
-                System.out.print(x[i][j]==0? ' ':x[i][j]);
+    private void showBuf(char[][] x) {
+        for (int i = 0; i < x.length; i++) {
+            for (int j = 0; j < x[i].length; j++)
+                System.out.print(x[i][j] == 0 ? ' ' : x[i][j]);
             System.out.println();
         }
     }
 
-    private void printInBuf(char[][] buf, int x, int y){
+    private void printInBuf(char[][] buf, int x, int y) {
         String sv = "" + v;
 
-        int p1 = l==null? x : l.getRootPos(x);
+        int p1 = l == null ? x : l.getRootPos(x);
         int p2 = getRootPos(x);
-        int p3 = r==null? p2 : r.getRootPos(p2+sv.length());
+        int p3 = r == null ? p2 : r.getRootPos(p2 + sv.length());
 
         buf[y][p2] = '|';
-        for(int i=p1; i<=p3; i++) buf[y+1][i]='-';
-        for(int i=0; i<sv.length(); i++)
-            buf[y+1][i+p2] = sv.charAt(i);    //Ìî¿ÕÎ»ÖÃ
-        if(p1<p2) buf[y+1][p1] = '/';
-        if(p3>p2) buf[y+1][p3] = '\\';
+        for (int i = p1; i <= p3; i++) buf[y + 1][i] = '-';
+        for (int i = 0; i < sv.length(); i++)
+            buf[y + 1][i + p2] = sv.charAt(i);    //ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+        if (p1 < p2) buf[y + 1][p1] = '/';
+        if (p3 > p2) buf[y + 1][p3] = '\\';
 
-        if(l!=null)   l.printInBuf(buf,x,y+2);
-        if(r!=null)   r.printInBuf(buf,p2+sv.length(),y+2);
+        if (l != null) l.printInBuf(buf, x, y + 2);
+        if (r != null) r.printInBuf(buf, p2 + sv.length(), y + 2);
     }
 
-    private int getRootPos(int x){
-        return l==null? x : x + l.getWidth();
+    private int getRootPos(int x) {
+        return l == null ? x : x + l.getWidth();
     }
 }
 
-class ÏÔÊ¾¶þ²æÊ÷
-{
-    public static void main(String[] args)
-    {
-        BiTree tree = new BiTree(500);
+class ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        {
+public static void main(String[]args)
+        {
+        BiTree tree=new BiTree(500);
         tree.add(new BiTree(200));
         tree.add(new BiTree(509));
         tree.add(new BiTree(100));
@@ -92,5 +91,5 @@ class ÏÔÊ¾¶þ²æÊ÷
         tree.add(new BiTree(440));
         tree.add(new BiTree(220));
         tree.show();
-    }
-}
+        }
+        }

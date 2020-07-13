@@ -1,68 +1,73 @@
-package ¶¯Ì¬¹æ»®;
+package
+
+ï¿½ï¿½Ì¬ï¿½æ»®;
 import java.util.Arrays;
 import java.util.Scanner;
-public class Çø¼äÑ¡µãÎÊÌâ {
-	// https://vjudge.net/problem/POJ-1201
-	//³¬Ê±´úÂë
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n=sc.nextInt();
-		Interval[] intervals = new Interval[n];
-		for (int i = 0; i < n; i++) {
-			intervals[i] = new Interval(sc.nextInt(), sc.nextInt(), sc.nextInt());
-		}
-		Arrays.sort(intervals);
-		int max = intervals[n-1].t;
-		int axis[] = new int[max+1];
-		int [] c = new int [max+2];
-		for (int i = 0; i < n; i++) {
-			int s=intervals[i].s;
-			int t=intervals[i].t;
-			 int cnt=sum(axis,s,t);
-			intervals[i].c-=cnt;
-			while(intervals[i].c>0){
-				if(axis[t]==0){
-					axis[t]=1;
-					intervals[i].c--;
-					t--;
-				}else{
-					t--;
-				}
-			}
-		}
-		System.out.println(sum(axis,0,max));
-	}
-	
-	private static int sum(int axis[],int s,int t){
-		int sum=0;
-		for (int i = s; i <=t; i++) {
-			sum+=axis[i];
-		}
-		return sum;
-	}
-	private static void updateSum(int t,int[]sums){
-		for (int i = t; i < sums.length; i++) {
-			sums[i]++;
-		}
-	}
-	
-	private static class Interval implements Comparable<Interval>{
-		int s;
-		int t;
-		int c;
-		public Interval(int s,int t,int c){
-			this.s=s;
-			this.t=t;
-			this.c=c;
-		}
-		@Override
-		public int compareTo(Interval other) {
-			int x=this.t-other.t;
-			if(x==0)
-				return this.t-other.t;
-			else
-			return x;
-		}
-		
-	}
+
+public class ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+// https://vjudge.net/problem/POJ-1201
+//ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        Interval[]intervals=new Interval[n];
+        for(int i=0;i<n; i++){
+        intervals[i]=new Interval(sc.nextInt(),sc.nextInt(),sc.nextInt());
+        }
+        Arrays.sort(intervals);
+        int max=intervals[n-1].t;
+        int axis[]=new int[max+1];
+        int[]c=new int[max+2];
+        for(int i=0;i<n; i++){
+        int s=intervals[i].s;
+        int t=intervals[i].t;
+        int cnt=sum(axis,s,t);
+        intervals[i].c-=cnt;
+        while(intervals[i].c>0){
+        if(axis[t]==0){
+        axis[t]=1;
+        intervals[i].c--;
+        t--;
+        }else{
+        t--;
+        }
+        }
+        }
+        System.out.println(sum(axis,0,max));
+        }
+
+private static int sum(int axis[],int s,int t){
+        int sum=0;
+        for(int i=s;i<=t;i++){
+        sum+=axis[i];
+        }
+        return sum;
+        }
+private static void updateSum(int t,int[]sums){
+        for(int i=t;i<sums.length;i++){
+        sums[i]++;
+        }
+        }
+
+private static class Interval implements Comparable<Interval> {
+    int s;
+    int t;
+    int c;
+
+    public Interval(int s, int t, int c) {
+        this.s = s;
+        this.t = t;
+        this.c = c;
+    }
+
+    @Override
+    public int compareTo(Interval other) {
+        int x = this.t - other.t;
+        if (x == 0)
+            return this.t - other.t;
+        else
+            return x;
+    }
+
+}
 }

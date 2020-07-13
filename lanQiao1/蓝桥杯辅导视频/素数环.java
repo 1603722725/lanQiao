@@ -1,70 +1,72 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 /**
  * @author wl
  * @Data 2020-04-17 23:04
  */
 import java.util.Scanner;
-public class ËØÊý»· {
-    static int cnt=0;
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] res = new int[n];
-        res[0] = 1;//Ä¬ÈÏµÚÒ»¸öÎª1
+
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+static int cnt=0;
+public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[]res=new int[n];
+        res[0]=1;//Ä¬ï¿½Ïµï¿½Ò»ï¿½ï¿½Îª1
         dfs(res,n,1);
-        if(cnt==0) {
-            System.out.println("no solution!");
-        }else {
-            System.out.println(cnt);
+        if(cnt==0){
+        System.out.println("no solution!");
+        }else{
+        System.out.println(cnt);
         }
-    }
+        }
 
-    /**
-     *
-     * @param r ±£´æ½á¹û
-     * @param n ËØÊýµÄ¸öÊý
-     * @param k µ±Ç°¸öÊý
-     */
-    static void dfs(int[] r,int n,int k) {
-        if(k == n && isSu(r[0]+r[k-1])) {
-            printRes(r);
-            cnt++;
-            return;
+/**
+ * @param r ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param n ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
+ * @param k ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½
+ */
+static void dfs(int[]r,int n,int k){
+        if(k==n&&isSu(r[0]+r[k-1])){
+        printRes(r);
+        cnt++;
+        return;
         }
-        for(int i=2;i<=n;i++) {
-            if(check(r,k,i)) {
-                r[k] = i;
-                dfs(r,n,k+1);
-                r[k] = 0;//¿ÉÊ¡ÂÔ»ØËÝ
-            }
+        for(int i=2;i<=n;i++){
+        if(check(r,k,i)){
+        r[k]=i;
+        dfs(r,n,k+1);
+        r[k]=0;//ï¿½ï¿½Ê¡ï¿½Ô»ï¿½ï¿½ï¿½
         }
-    }
+        }
+        }
 
-    //´òÓ¡ËØÊý»·
-    private static void printRes(int[] r) {
-        for(int i=0;i<r.length;i++) {
-            System.out.print(r[i]+"  ");
+//ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+private static void printRes(int[]r){
+        for(int i=0;i<r.length;i++){
+        System.out.print(r[i]+"  ");
         }
         System.out.println();
-    }
-    /**
-     *
-     * @param r ´æ´¢Êý×é
-     * @param k µ±Ç°ËØÊý¸öÊý
-     * @param i ÊÇ·ñ¿ÉÒÔÌîµÄÖµ
-     * @return
-     */
-    private static boolean check(int[] r,int k,  int i) {
-        if(!isSu(r[k-1]+i))return false;//k-1ÊÇµÚk¸öËØÊýÔÚÊý×éµÄÖÐµÄÎ»ÖÃ
-        for(int j=0;j<k;j++)if(i==r[j])return  false;//È·±£ÓëÖ®Ç°µÄÊýÃ»ÓÐÖØ¸´µÄ
+        }
+/**
+ *
+ * @param r ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½
+ * @param k ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param i ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+ * @return
+ */
+private static boolean check(int[]r,int k,int i){
+        if(!isSu(r[k-1]+i))return false;//k-1ï¿½Çµï¿½kï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Î»ï¿½ï¿½
+        for(int j=0;j<k;j++)if(i==r[j])return false;//È·ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½
         return true;
-    }
-    //ÅÐ¶ÏÊÇ·ñÎªËØÊý
-    private static boolean isSu(int i) {
-        for(int j=2;j<i;j++) {
-            if(i%j == 0) return false;
+        }
+//ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½ï¿½ï¿½
+private static boolean isSu(int i){
+        for(int j=2;j<i;j++){
+        if(i%j==0)return false;
         }
         return true;
-    }
-}
+        }
+        }

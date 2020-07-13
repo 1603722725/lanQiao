@@ -1,57 +1,59 @@
-package À¶ÇÅ±­;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ä§·½×´Ì¬ {
-		//È«ÅÅÁĞÎÊÌâ
-		//Í¨¹ı·ÖÎö£¬´ËÄ§·½Ò»¹²°Ë¿é ·Ö±ğÊÇ »Æ³ÈÂÌËÄ¿é  ³È³ÈÂÌÁ½¿é  »Æ»ÆÂÌÁ½¿é
-		//¼´´ËÌâ±ä³É11112233µÄÈ«ÅÅÁĞÎÊÌâ
-		//µ«ÊÇ11112233Óë33221111ÏàÍ¬
-		static int count;
-		static List<String> list=new ArrayList<>();
-		public static void main(String[] args)
-		{
-			String string="11112233";
-			f(string.toCharArray(),0);
-			System.out.println(count);
-		}
-	 
-		private static void f(char[] charArray, int i)
-		{
-			if (i==8)
-			{
-				String string=new String(charArray);
-				String string2=reverse(string);
-				if (list.contains(string)||list.contains(string2))
-				{
-					return;
-				}
-				count++;
-				System.out.println(string);
-				list.add(string);
-			}
-			
-			for (int j = i; j < charArray.length; j++)
-			{
-				char old=charArray[i];
-				charArray[i]=charArray[j];
-				charArray[j]=old;
-				
-				f(charArray, i+1);
-				
-				old=charArray[i];
-				charArray[i]=charArray[j];
-				charArray[j]=old;
-			}
-		}
-		private static String reverse(String string)
-		{
-			String string2="";
-			for (int i = 0; i < string.length(); i++)
-			{
-				string2=string.charAt(i)+string2;
-			}
-			return string2;
-		}                                                                                                                                                                                                                                                                                                               
-}
+public class Ä§ï¿½ï¿½×´Ì¬ {
+//È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä§ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ë¿ï¿½ ï¿½Ö±ï¿½ï¿½ï¿½ ï¿½Æ³ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½  ï¿½È³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½Æ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½11112233ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½11112233ï¿½ï¿½33221111ï¿½ï¿½Í¬
+static int count;
+static List<String> list=new ArrayList<>();
+public static void main(String[]args)
+        {
+        String string="11112233";
+        f(string.toCharArray(),0);
+        System.out.println(count);
+        }
+
+private static void f(char[]charArray,int i)
+        {
+        if(i==8)
+        {
+        String string=new String(charArray);
+        String string2=reverse(string);
+        if(list.contains(string)||list.contains(string2))
+        {
+        return;
+        }
+        count++;
+        System.out.println(string);
+        list.add(string);
+        }
+
+        for(int j=i;j<charArray.length;j++)
+        {
+        char old=charArray[i];
+        charArray[i]=charArray[j];
+        charArray[j]=old;
+
+        f(charArray,i+1);
+
+        old=charArray[i];
+        charArray[i]=charArray[j];
+        charArray[j]=old;
+        }
+        }
+private static String reverse(String string)
+        {
+        String string2="";
+        for(int i=0;i<string.length();i++)
+        {
+        string2=string.charAt(i)+string2;
+        }
+        return string2;
+        }
+        }

@@ -1,72 +1,80 @@
-package Õ»ºÍ¶ÓÁÐ;
+package Õ»
+
+ï¿½Í¶ï¿½ï¿½ï¿½;
 import java.util.Stack;
+
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/16 - 21:56
  */
 public class problem01_GetMinStack {
-    public static class Mystack1{
+    public static class Mystack1 {
         private Stack<Integer> stackData;
         private Stack<Integer> stackMin;
+
         public Mystack1() {
-            this.stackData =new Stack<Integer>();
+            this.stackData = new Stack<Integer>();
             this.stackMin = new Stack<Integer>();
         }
-        public void push(int newNum){
-            if(this.stackMin.isEmpty()){
+
+        public void push(int newNum) {
+            if (this.stackMin.isEmpty()) {
                 this.stackMin.push(newNum);
-            }else if (newNum <= this.getmin()){
+            } else if (newNum <= this.getmin()) {
                 this.stackMin.push(newNum);
             }
             this.stackData.push(newNum);
         }
 
         public int getmin() {
-            if (this.stackMin.isEmpty()){
-                throw new  RuntimeException("Your stack is empty!");
+            if (this.stackMin.isEmpty()) {
+                throw new RuntimeException("Your stack is empty!");
             }
             return this.stackMin.peek();
         }
 
-        public int pop(){
-            if(this.stackData.isEmpty()){
-                throw new  RuntimeException("Your stack is empty!");
+        public int pop() {
+            if (this.stackData.isEmpty()) {
+                throw new RuntimeException("Your stack is empty!");
             }
             int value = this.stackData.pop();
-            if(value == this.getmin())
+            if (value == this.getmin())
                 this.stackMin.pop();
             return value;
         }
     }
-    public static class Mystack2{
+
+    public static class Mystack2 {
         private Stack<Integer> stackData;
         private Stack<Integer> stackMin;
-        public Mystack2(){
+
+        public Mystack2() {
             this.stackData = new Stack<>();
             this.stackMin = new Stack<>();
         }
 
-        public void push(int newNum){
-            if(this.stackMin.isEmpty()){
+        public void push(int newNum) {
+            if (this.stackMin.isEmpty()) {
                 this.stackMin.push(newNum);
-            }else if(newNum<this.getmin()){
+            } else if (newNum < this.getmin()) {
                 this.stackMin.push(newNum);
-            }else{
+            } else {
                 int newMin = this.stackMin.peek();
                 this.stackMin.push(newMin);
             }
             this.stackData.push(newNum);
         }
 
-        public int pop(){
-            if (this.stackData.isEmpty()){
+        public int pop() {
+            if (this.stackData.isEmpty()) {
                 throw new RuntimeException("Your stack is empty!");
             }
             this.stackMin.pop();
             return this.stackData.pop();
         }
-        public int getmin(){
-            if(this.stackMin.isEmpty()){
+
+        public int getmin() {
+            if (this.stackMin.isEmpty()) {
                 throw new RuntimeException("Your stack is empty!");
             }
             return this.stackMin.peek();

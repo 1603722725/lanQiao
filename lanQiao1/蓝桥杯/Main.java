@@ -1,27 +1,30 @@
-package À¶ÇÅ±­;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½;
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {    
-    	Scanner sc =new Scanner(System.in);
-    	String str = sc.nextLine();
-    	int n = Integer.valueOf(str, 16);//°ÑÈÎÒâ½øÖÆ×ª»»Îª10½øÖÆ
-    	
-    	if(str.length()==1)
-    		System.out.println("Hex: 0x00"+str);
-    	else if(str.length()==2)
-    		System.out.println("Hex: 0x0"+str);
-    	else
-    		System.out.println("Hex: 0x"+str);
-    	System.out.println("Decimal: "+n);
-    	String e= Integer.toOctalString(n);
-    	if (e.length() == 1)
-			System.out.println("Octal: 000" + e);
-		else if (e.length() == 2)
-			System.out.println("Octal: 00" + e);
-		else if (e.length() == 3)
-			System.out.println("Octal: 0" + e);
-		if (e.length() == 4)
-			System.out.println("Octal: " + e);
-    }    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int n = Integer.valueOf(str, 16);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îª10ï¿½ï¿½ï¿½ï¿½
+
+        if (str.length() == 1)
+            System.out.println("Hex: 0x00" + str);
+        else if (str.length() == 2)
+            System.out.println("Hex: 0x0" + str);
+        else
+            System.out.println("Hex: 0x" + str);
+        System.out.println("Decimal: " + n);
+        String e = Integer.toOctalString(n);
+        if (e.length() == 1)
+            System.out.println("Octal: 000" + e);
+        else if (e.length() == 2)
+            System.out.println("Octal: 00" + e);
+        else if (e.length() == 3)
+            System.out.println("Octal: 0" + e);
+        if (e.length() == 4)
+            System.out.println("Octal: " + e);
+    }
 }

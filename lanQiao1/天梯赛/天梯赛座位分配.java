@@ -1,18 +1,20 @@
-package ÌìÌİÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ÌìÌİÈü×ùÎ»·ÖÅä {
-	static int a[][];
-	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
-		int n=sc.nextInt();
-		int arr[] = new int [n];
-		for (int i = 0; i < n; i++) {
-			arr[i]=sc.nextInt();
-		}
-		Arrays.sort(arr);
-		
-	}
-}
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ {
+static int a[][];
+public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n; i++){
+        arr[i]=sc.nextInt();
+        }
+        Arrays.sort(arr);
+
+        }
+        }

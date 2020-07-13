@@ -1,36 +1,38 @@
-package Õ»ºÍ¶ÓÁÐ;
+package Õ»
+
+ï¿½Í¶ï¿½ï¿½ï¿½;
 
 import java.util.Stack;
 
 /**
- * @author ÍôÀÚ
+ * @author ï¿½ï¿½ï¿½ï¿½
  * @date 2019/4/19 - 19:08
  */
-public class problem04_Õ»µÄÅÅÐò {
-    public static void sortStackByStack(Stack<Integer>stack){
-        Stack<Integer> help = new Stack<Integer>();
+public class problem04_Õ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+public static void sortStackByStack(Stack<Integer>stack){
+        Stack<Integer> help=new Stack<Integer>();
         while(!stack.isEmpty()){
-            int cur = stack.pop();
-            while (!help.isEmpty()  &&  help.peek()>cur){
-                stack.push(help.pop());
-            }
-            help.push(cur);
+        int cur=stack.pop();
+        while(!help.isEmpty()&&help.peek()>cur){
+        stack.push(help.pop());
         }
-        while (!help.isEmpty()){
-            stack.push(help.pop());
+        help.push(cur);
         }
-    }
+        while(!help.isEmpty()){
+        stack.push(help.pop());
+        }
+        }
 
-    public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<Integer>();
+public static void main(String[]args){
+        Stack<Integer> stack=new Stack<Integer>();
         stack.push(8);
         stack.push(6);
         stack.push(7);
         stack.push(3);
         stack.push(4);
         sortStackByStack(stack);
-        while (!stack.isEmpty()){
-            System.out.println(stack.pop());
+        while(!stack.isEmpty()){
+        System.out.println(stack.pop());
         }
-    }
-}
+        }
+        }

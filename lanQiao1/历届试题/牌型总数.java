@@ -1,21 +1,21 @@
-package Àú½ìÊÔÌâ;
+package ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 
-public class ÅÆĞÍ×ÜÊı {
-	static int ans=0;
-	public static void main(String[] args) {
-		f(0,0);
-		System.out.println(ans);
-	}
-	
-	private static void f(int k, int cnt) {
-		if(k>13 || cnt>13)
-			return;
-		if(k==13 && cnt == 13){
-			ans++;
-			return;
-		}
-		for (int i = 0; i < 5; i++) {
-			f(k+1, cnt+i);
-		}
-	}
-}
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+static int ans=0;
+public static void main(String[]args){
+        f(0,0);
+        System.out.println(ans);
+        }
+
+private static void f(int k,int cnt){
+        if(k>13||cnt>13)
+        return;
+        if(k==13&&cnt==13){
+        ans++;
+        return;
+        }
+        for(int i=0;i< 5;i++){
+        f(k+1,cnt+i);
+        }
+        }
+        }

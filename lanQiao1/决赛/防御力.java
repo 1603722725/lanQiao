@@ -1,4 +1,6 @@
-package ¾öÈü;
+package
+
+ï¿½ï¿½ï¿½ï¿½;
 
 import java.util.Scanner;
 
@@ -6,8 +8,8 @@ import java.util.Scanner;
  * @Author: wl
  * @Date: 2019/5/17 19:55
  */
-public class ·ÀÓùÁ¦ {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-    }
-}
+public class ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        }
+        }

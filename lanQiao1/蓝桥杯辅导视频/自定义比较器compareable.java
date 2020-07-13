@@ -17,18 +17,21 @@ public class 自定义比较器compareable {
         for (int i = 0; i < 4; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
-            job[i] = new Job(a,b);
+            job[i] = new Job(a, b);
         }
         Arrays.sort(job);
         System.out.println(Arrays.toString(job));
     }
-        public static class Job implements Comparable<Job>{
+
+    public static class Job implements Comparable<Job> {
         int s;
         int t;
-        public Job(int s,int t){
+
+        public Job(int s, int t) {
             this.s = s;
             this.t = t;
         }
+
         @Override
         public int compareTo(Job o) {
             int x = this.t - o.t;

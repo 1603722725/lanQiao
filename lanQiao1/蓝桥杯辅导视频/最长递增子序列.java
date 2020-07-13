@@ -1,4 +1,6 @@
-package À¶ÇÅ±­¸¨µ¼ÊÓÆµ;
+package
+
+ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµ;
 
 import javax.sound.midi.Soundbank;
 import java.util.Arrays;
@@ -7,101 +9,102 @@ import java.util.Arrays;
  * @author wl
  * @Data 2020-01-14 15:40
  */
-public class ×î³¤µÝÔö×ÓÐòÁÐ {
-    /**
-     * ×î³¤Á¬ÐøµÝÔö×ÓÐòÁÐ
-     * @param arr
-     * @return
-     */
-    public static int longestIncreasingSubsequence1(int[] arr){
+public class ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
+/**
+ * ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * @param arr
+ * @return
+ */
+public static int longestIncreasingSubsequence1(int[]arr){
         int begin=0,end=1;
         int max=1;
-        while (end<arr.length){
-            int count=1;
-            boolean flag = true;
-            while (flag&&end<arr.length){
-                if(arr[begin] < arr[end]){
-                    count++;
-                    begin=end;
-                    end++;
+        while(end<arr.length){
+        int count=1;
+        boolean flag=true;
+        while(flag&&end<arr.length){
+        if(arr[begin]<arr[end]){
+        count++;
+        begin=end;
+        end++;
 //                    System.out.println(begin+"-"+end);
-                }else{
-                    flag = false;
-                }
-            }
-            if (count>max) max=count;
-            count=1;
-            begin=end;
-            end=begin+1;
+        }else{
+        flag=false;
+        }
+        }
+        if(count>max)max=count;
+        count=1;
+        begin=end;
+        end=begin+1;
 //            System.out.println(begin+"===="+end);
         }
         return max;
-    }
+        }
 
-    /**
-     * ×î³¤µÝÔö×ÓÐòÁÐ  ¿É²»Á¬Ðø  Ê±¼ä¸´ÔÓ¶ÈN2
-     * @param arr
-     * @return
-     */
-    public static int longestIncreasingSubsequence2(int[] arr){
-        int dp[] = new int[arr.length];
+/**
+ * ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½É²ï¿½ï¿½ï¿½ï¿½ï¿½  Ê±ï¿½ä¸´ï¿½Ó¶ï¿½N2
+ * @param arr
+ * @return
+ */
+public static int longestIncreasingSubsequence2(int[]arr){
+        int dp[]=new int[arr.length];
         dp[0]=1;
-        for(int i=1;i<arr.length;i++) {
-            int cnt = 1;
-            for (int j = i - 1; j >= 0; j--) {
-                if (arr[j] < arr[i])
-                    cnt = Math.max(cnt, dp[j] + 1);
-            }
-            dp[i] = cnt;
+        for(int i=1;i<arr.length;i++){
+        int cnt=1;
+        for(int j=i-1;j>=0;j--){
+        if(arr[j]<arr[i])
+        cnt=Math.max(cnt,dp[j]+1);
+        }
+        dp[i]=cnt;
         }
         int maxV=0;
         for(int i=0;i<arr.length;i++){
-            maxV = Math.max(maxV,dp[i]);
+        maxV=Math.max(maxV,dp[i]);
         }
         return maxV;
-    }
+        }
 
-    /**
-     * ×î³¤µÝÔö×ÓÐòÁÐ  ¿É²»Á¬Ðø  Ê±¼ä¸´ÔÓ¶Ènlog(n)
-     * @param arr
-     * @return
-     */
-    public static int longestIncreasingSubsequence3(int arr[]){
-        int[] dp = new int[arr.length+1];
-        dp[1] = arr[0];
-        int index = 1;
-        for (int i=1;i<arr.length;i++){
-            if(arr[i]>dp[index]){
-                dp[++index]=arr[i];
-            }else{
-                int tempIndex=BinarySearch(dp,arr[i],index);
-                dp[tempIndex]=arr[i];
-            }
+/**
+ * ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½É²ï¿½ï¿½ï¿½ï¿½ï¿½  Ê±ï¿½ä¸´ï¿½Ó¶ï¿½nlog(n)
+ * @param arr
+ * @return
+ */
+public static int longestIncreasingSubsequence3(int arr[]){
+        int[]dp=new int[arr.length+1];
+        dp[1]=arr[0];
+        int index=1;
+        for(int i=1;i<arr.length;i++){
+        if(arr[i]>dp[index]){
+        dp[++index]=arr[i];
+        }else{
+        int tempIndex=BinarySearch(dp,arr[i],index);
+        dp[tempIndex]=arr[i];
+        }
         }
         System.out.println(Arrays.toString(dp));
         return index;
-    }
-    /**
-     * ¶þ·Ö²éÕÒ±äÌå ÕÒµ½µÚÒ»¸ö´óÓÚnµÄÎ»ÖÃindex
-     * @param dp
-     * @param n
-     * @return
-     */
-    public static int BinarySearch(int[] dp,int n,int len){
-        int left=1,right= len;
-        while (left<right){
-            int mid = (left+right)/2;
-            if(dp[mid]>n)
-                right=mid;
-            else
-                left=mid+1;
+        }
+/**
+ * ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ò±ï¿½ï¿½ï¿½ ï¿½Òµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Î»ï¿½ï¿½index
+ * @param dp
+ * @param n
+ * @return
+ */
+public static int BinarySearch(int[]dp,int n,int len){
+        int left=1,right=len;
+        while(left<right){
+        int mid=(left+right)/2;
+        if(dp[mid]>n)
+        right=mid;
+        else
+        left=mid+1;
         }
         return right;
-    }
-    public static void main(String[] args) {
-        int[] arr={1,2,3,4,5};   //{-1,1,-2,2,-3,3};
+        }
+public static void main(String[]args){
+        int[]arr={1,2,3,4,5};   //{-1,1,-2,2,-3,3};
 //        int n=longestIncreasingSubsequence1(arr);
 //        int n=longestIncreasingSubsequence2(arr);
         System.out.println(longestIncreasingSubsequence3(arr));
-    }
-}
+        }
+        }
