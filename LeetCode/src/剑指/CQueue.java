@@ -1,5 +1,9 @@
 package ½£Ö¸;
 
+import leetcode.A;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.LinkedList;
 
 /**
@@ -12,25 +16,29 @@ public class CQueue {
 
     }
 
-    LinkedList<Integer> A, B;
 
+    Deque<Integer> stack1;
+    Deque<Integer> stack2;
     public CQueue() {
-        A = new LinkedList();
-        B = new LinkedList();
+        stack1 = new LinkedList<>();
+        stack2 = new LinkedList<>();
     }
 
     public void appendTail(int value) {
-        A.addLast(value);
+        stack1.addLast(value);
     }
 
     public int deleteHead() {
-        if (!B.isEmpty()) {
-            return B.removeLast();
+        if (stack2.isEmpty()){
+            while (!stack1.isEmpty()){
+                stack2.push(stack1.pop());
+            }
         }
-        if (A.isEmpty()) return -1;
-        while (!A.isEmpty()) {
-            B.addLast(A.removeLast());
+        if (stack2.isEmpty()){
+            return -1;
+        }else {
+            int deleteItem = stack2.pop();
+            return deleteItem;
         }
-        return B.removeLast();
     }
 }

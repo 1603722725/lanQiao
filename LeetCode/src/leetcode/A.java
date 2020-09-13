@@ -8,21 +8,32 @@ import java.util.regex.Pattern;
  * @author wl
  * @Data 2020-02-26 20:40
  */
+
 public class A {
+    public class ListNode{
+        int val;
+        ListNode next;
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
     public static void main(String args[]) {
-        Map<String, String> map = new HashMap<>((int) Math.pow(2, 30) - 1);
-        map.put("1", "12");
-        System.out.println(map);
+
+    }
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode prehead = new ListNode(-1);
+        ListNode prev = prehead;
+        while (l1 != null && l2 != null ){
+            if (l1.val < l2.val){
+                prev.next = l1;
+                l1 = l1.next;
+            }else {
+                prev.next = l2;
+                l2 = l2.next;
+            }
+            prev = prev.next;
+        }
+        prev.next = l1 == null ? l2 : l1;
+        return prehead.next;
     }
 
-    public boolean canMakeArithmeticProgression(int[] arr) {
-        Arrays.sort(arr);
-        int a = arr[1] - arr[0];
-        for (int i = 2; i < arr.length; i++) {
-            if (a != arr[i] - arr[i - 1]) {
-                return false;
-            }
-        }
-        return true;
-    }
 }
